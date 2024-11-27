@@ -21,9 +21,3 @@ header {
     width: 100px; /* Adjust size */
     height: auto;
 }
-
-@media (max-width: 768px) {
-    .logo svg, .logo img {
-        width: 75px; /* Smaller size for mobile */
-    }
-}
