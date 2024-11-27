@@ -37,17 +37,12 @@ header h1 {
 /* Welcome Container */
 .welcome-container {
     max-width: 800px;
-    width: 90%;
-    margin: 0 auto; /* Horizontal centering */
+    margin: 50px auto;
     padding: 20px;
     background-color: #262626;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     text-align: left;
-    position: absolute; /* Use absolute positioning for centering */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center vertically and horizontally */
 }
 
 .welcome-container h2 {
