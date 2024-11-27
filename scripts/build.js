@@ -1,9 +1,12 @@
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 // Define paths
 const srcDir = path.join(__dirname, '../src');
 const publicDir = path.join(__dirname, '../public');
+const tailwindInput = path.join(srcDir, 'assets/css/style.css');
+const tailwindOutput = path.join(publicDir, 'assets/css/output.css');
 
 // Helper to copy files
 const copyFiles = (source, destination) => {
@@ -33,6 +36,16 @@ const buildSite = () => {
     // Copy assets and pages
     copyFiles(path.join(srcDir, 'assets'), path.join(publicDir, 'assets'));
     copyFiles(path.join(srcDir, 'pages'), publicDir);
+
+    // Build Tailwind CSS
+    try {
+        console.log('Building Tailwind CSS...');
+        execSync(`npx tailwindcss -i ${tailwindInput} -o ${tailwindOutput}`, { stdio: 'inherit' });
+        console.log('Tailwind CSS built successfully!');
+    } catch (error) {
+        console.error('Failed to build Tailwind CSS:', error.message);
+        process.exit(1);
+    }
 };
 
 buildSite();
