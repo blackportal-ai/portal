@@ -1,5 +1,8 @@
 ---
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 import '@/styles/globals.css';
+import '@fontsource-variable/inter';
 
 interface Props {
   title: string;
@@ -8,20 +11,24 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title} | DeltaRS</title>
+    <title>{title} | Delta</title>
   </head>
 
   <body>
-    <div class="bg-background text-foreground flex min-h-screen flex-col">
+    <div class="flex min-h-screen flex-col">
+      <Navbar />
+
       <div class="grow">
         <slot />
       </div>
+
+      <Footer />
     </div>
   </body>
 </html>
