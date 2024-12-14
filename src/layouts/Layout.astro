@@ -13,7 +13,7 @@ const { title } = Astro.props;
 const ogImageUrl = 'https://deltaml.org/images/delta-banner.png';
 ---
 
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -37,7 +37,7 @@ const ogImageUrl = 'https://deltaml.org/images/delta-banner.png';
 
   <body>
     <div class="flex min-h-screen flex-col">
-      <Navbar />
+      <Navbar client:load />
 
       <div class="grow">
         <slot />
@@ -47,3 +47,27 @@ const ogImageUrl = 'https://deltaml.org/images/delta-banner.png';
     </div>
   </body>
 </html>
+
+<script is:inline>
+  const getThemePreference = () => {
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+      return localStorage.getItem('theme');
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light';
+  };
+
+  const updateTheme = () => {
+    const isDark = getThemePreference() === 'dark';
+
+    document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+  };
+
+  updateTheme();
+
+  window
+    .matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', () => updateTheme());
+</script>

@@ -2,6 +2,7 @@ import { Link } from '@/components/ui/Link';
 import DeltaLogo from '@/components/icons/DeltaLogo';
 
 import { socialLinks } from '@/data/social-links';
+import ModeToggle from './ModeToggle';
 
 export default function Navbar() {
   return (
@@ -12,7 +13,7 @@ export default function Navbar() {
           <span className="text-xl font-bold">Delta</span>
         </Link>
 
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-6">
           <ul className="font-semibold">
             <li>
               <Link
@@ -24,7 +25,9 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <ul className="flex items-center gap-6">
+          <ModeToggle />
+
+          <ul className="flex items-center gap-4">
             {socialLinks.map(({ icon: Icon, href }, idx) => (
               <li key={`social-link-${idx}`}>
                 <Link className="hover:text-primary" href={href}>
