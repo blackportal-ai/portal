@@ -12,8 +12,8 @@ export default function Hero() {
 
           <h1 className="z-10 mx-auto max-w-4xl text-center text-4xl font-extrabold md:text-5xl">
             <span className="text-primary">Delta</span> is an open-source
-            machine learning framework for{' '}
-            <span className="text-primary">Rust</span> developers
+            machine learning framework in{' '}
+            <span className="text-primary">Rust</span>
           </h1>
 
           <div className="z-10 mt-12 flex items-center justify-center">
