@@ -1,3 +1,5 @@
+import { SiGithub } from 'react-icons/si';
+
 import DeltaLogo from '@/components/icons/DeltaLogo';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
@@ -16,10 +18,17 @@ export default function Hero() {
             <span className="text-primary">Rust</span>
           </h1>
 
-          <div className="z-10 mt-12 flex items-center justify-center">
+          <div className="z-10 mt-12 flex items-center justify-center gap-4">
             <Button asChild>
               <Link href="https://docs.rs/deltaml/latest/deltaml/">
                 Read the Docs
+              </Link>
+            </Button>
+
+            <Button variant="secondary" asChild>
+              <Link href="https://github.com/delta-rs/delta">
+                <SiGithub />
+                <span>Star 100+</span>
               </Link>
             </Button>
           </div>
