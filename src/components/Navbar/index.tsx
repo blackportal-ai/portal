@@ -13,7 +13,7 @@ export default function Navbar() {
           <span className="text-xl font-bold">Delta</span>
         </Link>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4">
           <ul className="font-semibold">
             <li>
               <Link
@@ -27,7 +27,7 @@ export default function Navbar() {
 
           <ModeToggle />
 
-          <ul className="flex items-center gap-4">
+          <ul className="flex items-center gap-3">
             {socialLinks.map(({ icon: Icon, href }, idx) => (
               <li key={`social-link-${idx}`}>
                 <Link className="hover:text-primary" href={href}>

@@ -1,4 +1,4 @@
-import { SiGithub, SiX } from 'react-icons/si';
+import { SiDiscord, SiGithub, SiX } from 'react-icons/si';
 
 export const socialLinks = [
   {
@@ -11,4 +11,9 @@ export const socialLinks = [
     href: 'https://x.com/deltaml_org',
     label: 'X',
   },
+  {
+    icon: SiDiscord,
+    href: 'https://discord.com/invite/S75dF9Pg',
+    label: 'Discord'
+  }
 ];
