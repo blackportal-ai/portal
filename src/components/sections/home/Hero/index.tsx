@@ -42,7 +42,7 @@ export default function Hero() {
             <Button variant="secondary" asChild>
               <Link href="https://github.com/delta-rs/delta">
                 <SiGithub />
-                <span>Star 100+</span>
+                <span>Star 200+</span>
               </Link>
             </Button>
           </div>
