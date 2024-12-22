@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container flex items-center justify-between py-8">
         <span>&copy; {new Date().getFullYear()} Delta</span>
 
-        <ul className="flex items-center gap-4">
+        <ul className="flex items-center gap-3">
           {socialLinks.map(({ icon: Icon, href }, idx) => (
             <li key={`footer-social-link-${idx}`}>
               <Link className="hover:text-primary" href={href}>
