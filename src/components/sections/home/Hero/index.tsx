@@ -1,10 +1,8 @@
 import { SiGithub } from 'react-icons/si';
 
-import DeltaLogo from '@/components/icons/DeltaLogo';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { Link } from '@/components/ui/Link';
-import { Image } from 'astro:assets';
 
 export default function Hero() {
   return (
@@ -26,7 +24,7 @@ export default function Hero() {
             height={756}
           />
 
-          <h1 className="z-10 mx-auto max-w-4xl text-center text-4xl font-extrabold md:text-5xl">
+          <h1 className="z-10 mx-auto max-w-4xl text-center text-4xl font-bold md:text-5xl">
             <span className="text-primary">Delta</span> is an open-source
             machine learning framework in{' '}
             <span className="text-primary">Rust</span>
