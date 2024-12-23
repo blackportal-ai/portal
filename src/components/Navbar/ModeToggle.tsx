@@ -27,6 +27,10 @@ export default function ModeToggle() {
         window.matchMedia('(prefers-color-scheme: dark)').matches);
 
     document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+    document.documentElement.setAttribute(
+      'data-theme',
+      isDark ? 'github-dark' : 'github-light',
+    );
   }, [theme]);
 
   const handleTheme = (theme: 'dark' | 'light') => {
