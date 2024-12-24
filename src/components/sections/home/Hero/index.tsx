@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <section className="py-20">
       <div className="container mx-auto max-w-5xl">
-        <DeltaLogo className="mx-auto mb-16 h-16 w-16" />
+        <DeltaLogo className="mx-auto mb-16 h-12 w-auto" />
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           <Card className="relative overflow-hidden text-center">
@@ -26,19 +26,26 @@ export default function Hero() {
                 Delta is an open-source machine learning framework in Rust
               </CardDescription>
 
-              <div className="z-10 flex items-center justify-center gap-4">
-                <Button asChild>
-                  <Link href="https://docs.rs/deltaml/latest/deltaml/">
-                    Read the Docs
-                  </Link>
-                </Button>
+              <div className="z-10">
+                <div className="flex items-center justify-center gap-4">
+                  <Button asChild>
+                    <Link href="/delta/docs">Docs</Link>
+                  </Button>
 
-                <Button variant="secondary" asChild>
-                  <Link href="https://github.com/delta-rs/delta">
-                    <SiGithub />
-                    <span>Star 200+</span>
-                  </Link>
-                </Button>
+                  <Button variant="secondary" asChild>
+                    <Link href="https://github.com/delta-rs/delta">
+                      <SiGithub />
+                      <span>Star 200+</span>
+                    </Link>
+                  </Button>
+                </div>
+
+                <Link
+                  className="mt-2 block"
+                  href="https://docs.rs/deltaml/latest/deltaml/"
+                >
+                  Read the Docs
+                </Link>
               </div>
             </CardHeader>
           </Card>
@@ -59,7 +66,7 @@ export default function Hero() {
                 <Button variant="secondary" asChild>
                   <Link href="https://github.com/delta-rs/nebula">
                     <SiGithub />
-                    <span>Star 3</span>
+                    <span>Star 4</span>
                   </Link>
                 </Button>
               </div>
