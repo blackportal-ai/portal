@@ -1,0 +1,26 @@
+---
+import DocsLayoutContent from '@/components/DocsLayoutContent';
+import Layout from './Layout.astro';
+
+import type { BreadcrumbItem } from '@/types/breadcrumb';
+import type { SidebarKey } from '@/types/sidebar';
+
+interface Props {
+  title: string;
+  description?: string;
+  sidebarKey: SidebarKey;
+  breadcrumb: BreadcrumbItem[];
+}
+
+const { title, description, sidebarKey, breadcrumb } = Astro.props;
+---
+
+<Layout title={title} description={description}>
+  <DocsLayoutContent
+    client:load
+    sidebarKey={sidebarKey}
+    breadcrumb={breadcrumb}
+  >
+    <slot />
+  </DocsLayoutContent>
+</Layout>

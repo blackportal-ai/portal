@@ -1,0 +1,37 @@
+---
+import { Link } from '@/components/ui/Link';
+import DocsLayout from '@/layouts/DocsLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allDocs = await getCollection('deltaDocs');
+
+const breadcrumb = [
+  {
+    title: 'Delta Docs',
+    active: true,
+  },
+];
+---
+
+<DocsLayout title="Delta Docs" sidebarKey="delta" breadcrumb={breadcrumb}>
+  <h1>Delta Docs</h1>
+
+  <p>
+    Delta is a machine learning framework written in Rust, designed to provide
+    efficient and scalable tools for building and training neural networks. The
+    framework aims to offer a comprehensive set of features, including various
+    neural network layers, activation functions, loss functions, optimizers, and
+    data handling utilities. It is designed to have easy-to-use APIs while
+    allowing advanced usage to customize and extend functionality.
+  </p>
+
+  <ul>
+    {
+      allDocs.map((doc) => (
+        <li>
+          <Link href={`/delta/docs/${doc.id}`}>{doc.data.title}</Link>
+        </li>
+      ))
+    }
+  </ul>
+</DocsLayout>

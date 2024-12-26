@@ -7,10 +7,9 @@ import ModeToggle from './ModeToggle';
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-card/80 shadow backdrop-blur">
-      <nav className="container flex h-16 items-center justify-between">
+      <nav className="flex h-16 items-center justify-between px-4">
         <Link className="flex items-center gap-3" href="/">
-          <DeltaLogo className="h-5 w-5" />
-          <span className="text-xl font-bold">Delta</span>
+          <DeltaLogo className="h-5 w-auto" />
         </Link>
 
         <div className="flex items-center gap-4">
@@ -27,11 +26,11 @@ export default function Navbar() {
 
           <ModeToggle />
 
-          <ul className="flex items-center gap-3">
+          <ul className="flex items-center gap-4">
             {socialLinks.map(({ icon: Icon, href }, idx) => (
               <li key={`social-link-${idx}`}>
                 <Link className="hover:text-primary" href={href}>
-                  <Icon className="h-5 w-5" />
+                  <Icon className="h-4 w-4" />
                 </Link>
               </li>
             ))}

@@ -1,0 +1,35 @@
+---
+import { Link } from '@/components/ui/Link';
+import DocsLayout from '@/layouts/DocsLayout.astro';
+import { getCollection, getEntry, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allDocs = await getCollection('deltaDocs');
+
+  return allDocs.map((doc: { id: string }) => ({ params: { id: doc.id } }));
+}
+
+const { id } = Astro.params;
+
+const doc = await getEntry('deltaDocs', id);
+
+if (!doc) {
+  throw Error('Not Found');
+}
+
+const { Content } = await render(doc);
+const breadcrumb = [
+  {
+    title: 'Delta Docs',
+    href: '/delta/docs',
+  },
+  {
+    title: doc.data.title,
+    active: true,
+  },
+];
+---
+
+<DocsLayout title={doc.data.title} sidebarKey="delta" breadcrumb={breadcrumb}>
+  <Content components={{ a: Link }} />
+</DocsLayout>

@@ -1,0 +1,44 @@
+---
+import { Button } from '@/components/ui/Button';
+import { Link } from '@/components/ui/Link';
+import { Code } from 'astro-expressive-code/components';
+---
+
+<section class="py-20">
+  <div class="container">
+    <h2 class="mb-6 text-center text-3xl font-bold">Get Started with Delta</h2>
+
+    <div class="content mx-auto max-w-5xl">
+      <div>
+        <h3>Adding Delta to Your Project</h3>
+        <p>
+          To add the Delta library to your Rust project, you need to include it
+          in your <code>Cargo.toml</code> file. Follow these steps:
+        </p>
+        <ol>
+          <li>Open your project's <code>Cargo.toml</code> file.</li>
+          <li>Add the following line under <code>[dependencies]</code>:</li>
+        </ol>
+        <Code
+          code={['[dependencies]', 'deltaml = "0.1.0"'].join('\n')}
+          lang="toml"
+          title="Cargo.toml"
+        />
+        <p>
+          Currently we have published Delta to <Link
+            href="https://crates.io/crates/deltaml">deltaml</Link
+          >, but not that this is still experimental in alpha stage so things
+          might break in the upcoming iterations.
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center">
+        <Button variant="secondary">
+          <Link className="!no-underline" href="/delta/docs/getting-started"
+            >Delta Usage Example</Link
+          >
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>

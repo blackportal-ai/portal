@@ -29,6 +29,14 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
@@ -56,6 +64,14 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -69,30 +85,79 @@
   }
 }
 
-.hero-before::before,
-.hero-after::after {
+.hero-delta::before,
+.hero-nebula::before {
   content: '';
   position: absolute;
-  width: 40rem;
-  height: 40rem;
-  background: radial-gradient(rgba(21, 128, 61, 0.1), transparent);
+  width: 15rem;
+  height: 15rem;
   border-radius: 9999px;
-  filter: blur(100px);
+  filter: blur(40px);
+  top: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.hero-before::before {
-  left: -20rem;
-  bottom: -20rem;
+.hero-delta::before {
+  background: radial-gradient(rgba(185, 65, 14, 0.4), transparent);
 }
 
-.hero-after::after {
-  right: -20rem;
-  top: -20rem;
+.hero-nebula::before {
+  background: radial-gradient(rgba(21, 128, 61, 0.4), transparent);
 }
 
-html[class='dark'] {
-  .hero-before::before,
-  .hero-after::after {
-    background: radial-gradient(rgb(5 46 22), transparent);
+.content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply mb-6 text-4xl;
+  }
+
+  h2 {
+    @apply mb-6 text-3xl;
+  }
+
+  h3 {
+    @apply my-4 text-2xl;
+  }
+
+  h4 {
+    @apply my-4 text-xl;
+  }
+
+  h5 {
+    @apply text-lg;
+  }
+
+  p {
+    @apply my-4;
+  }
+
+  ul,
+  ol {
+    @apply my-4 list-inside;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  code {
+    @apply rounded bg-card px-1;
+  }
+
+  a {
+    @apply underline;
   }
 }
