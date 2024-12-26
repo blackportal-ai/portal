@@ -26,7 +26,9 @@ export default function DocsLayoutContent({
       <SidebarInset>
         <DocsHeader breadcrumb={breadcrumb} />
 
-        <main className="content grid grid-cols-1 p-4 md:p-8">{children}</main>
+        <main className="prose prose-sm dark:prose-invert grid max-w-full grid-cols-1 p-4 md:p-8">
+          {children}
+        </main>
       </SidebarInset>
     </SidebarProvider>
   );
