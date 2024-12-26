@@ -29,7 +29,7 @@ export default function Hero() {
               <div className="z-10">
                 <div className="flex items-center justify-center gap-4">
                   <Button asChild>
-                    <Link href="/delta/docs">Docs</Link>
+                    <Link href="/delta/docs">Read the Docs</Link>
                   </Button>
 
                   <Button variant="secondary" asChild>
@@ -44,7 +44,7 @@ export default function Hero() {
                   className="mt-2 block"
                   href="https://docs.rs/deltaml/latest/deltaml/"
                 >
-                  Read the Docs
+                  Read on the docs.rs
                 </Link>
               </div>
             </CardHeader>
@@ -63,6 +63,10 @@ export default function Hero() {
               </CardDescription>
 
               <div className="z-10 flex items-center justify-center gap-4">
+                <Button asChild>
+                  <Link href="/nebula/docs">Read the Docs</Link>
+                </Button>
+
                 <Button variant="secondary" asChild>
                   <Link href="https://github.com/delta-rs/nebula">
                     <SiGithub />

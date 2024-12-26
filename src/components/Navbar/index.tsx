@@ -26,11 +26,11 @@ export default function Navbar() {
 
           <ModeToggle />
 
-          <ul className="flex items-center gap-3">
+          <ul className="flex items-center gap-4">
             {socialLinks.map(({ icon: Icon, href }, idx) => (
               <li key={`social-link-${idx}`}>
                 <Link className="hover:text-primary" href={href}>
-                  <Icon className="h-5 w-5" />
+                  <Icon className="h-4 w-4" />
                 </Link>
               </li>
             ))}
