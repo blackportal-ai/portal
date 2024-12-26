@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { SidebarTrigger } from '@/components/ui/Sidebar';
 import { Separator } from '@/components/ui/Separator';
 import {
@@ -17,7 +18,7 @@ type Props = {
 
 export default function DocsHeader({ breadcrumb }: Props) {
   return (
-    <div className="sticky top-0 flex h-16 shrink-0 items-center gap-2 border-b bg-background px-8">
+    <div className="sticky top-0 flex h-16 shrink-0 items-center gap-2 border-b bg-background px-4 md:px-8">
       <SidebarTrigger className="-ml-1" />
       <Separator orientation="vertical" className="mr-2 h-4" />
       <Breadcrumb>
@@ -32,17 +33,14 @@ export default function DocsHeader({ breadcrumb }: Props) {
             }
 
             return (
-              <>
-                <BreadcrumbItem
-                  key={`breadcrumb-item-${idx}`}
-                  className="hidden md:block"
-                >
+              <Fragment key={`breadcrumb-item-${idx}`}>
+                <BreadcrumbItem className="hidden md:block">
                   <BreadcrumbLink href={breadcrumbItem.href}>
                     {breadcrumbItem.title}
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="hidden md:block" />
-              </>
+              </Fragment>
             );
           })}
         </BreadcrumbList>
