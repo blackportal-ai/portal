@@ -4,15 +4,17 @@ import Layout from './Layout.astro';
 
 import type { BreadcrumbItem } from '@/types/breadcrumb';
 import type { SidebarKey } from '@/types/sidebar';
+import type { MarkdownHeading } from 'astro';
 
 interface Props {
   title: string;
   description?: string;
   sidebarKey: SidebarKey;
   breadcrumb: BreadcrumbItem[];
+  headings?: MarkdownHeading[];
 }
 
-const { title, description, sidebarKey, breadcrumb } = Astro.props;
+const { title, description, sidebarKey, breadcrumb, headings } = Astro.props;
 ---
 
 <Layout title={title} description={description}>
@@ -20,6 +22,7 @@ const { title, description, sidebarKey, breadcrumb } = Astro.props;
     client:load
     sidebarKey={sidebarKey}
     breadcrumb={breadcrumb}
+    headings={headings}
   >
     <slot />
   </DocsLayoutContent>
