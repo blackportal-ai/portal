@@ -17,16 +17,21 @@ const deltaMenu: SidebarItem[] = [
         href: '/delta/docs/dataset-support',
       },
       {
+        title: 'Spotlight',
+        href: '/delta/docs/spotlight',
+      },
+    ],
+  },
+  {
+    title: 'Contributors',
+    items: [
+      {
         title: 'Development Guidelines',
         href: '/delta/docs/development-guidelines',
       },
       {
         title: 'Release Checklist',
         href: '/delta/docs/release-checklist',
-      },
-      {
-        title: 'Spotlight',
-        href: '/delta/docs/spotlight',
       },
     ],
   },
