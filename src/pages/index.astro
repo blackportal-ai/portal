@@ -1,4 +1,5 @@
 ---
+import WelcomeMessage from '../components/sections/home/WelcomeMessage';
 import Features from '@/components/sections/home/Features';
 import GetStartedDelta from '@/components/sections/home/GetStarted/GetStartedDelta.astro';
 import Hero from '@/components/sections/home/Hero';
@@ -10,6 +11,7 @@ import Layout from '@/layouts/Layout.astro';
   description="Delta (Δ) is a high-performance machine learning framework written in Rust, tailored for compute-intensive tasks. Designed with both beginners and experts in mind, it offers intuitive APIs that simplify workflows while remaining flexible for advanced customizations."
 >
   <main>
+    <WelcomeMessage />
     <Hero />
     <Features />
     <GetStartedDelta />

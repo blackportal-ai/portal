@@ -1,6 +1,6 @@
 import type { SidebarItem, SidebarMenu } from '@/types/sidebar';
 
-const deltaMenu: SidebarItem[] = [
+export const deltaMenu: SidebarItem[] = [
   {
     title: 'Delta Docs',
     href: '/delta/docs',
@@ -16,11 +16,49 @@ const deltaMenu: SidebarItem[] = [
         title: 'Dataset Support',
         href: '/delta/docs/dataset-support',
       },
+    ],
+  },
+  {
+    title: 'Advanced',
+    items: [
       {
-        title: 'Spotlight',
-        href: '/delta/docs/spotlight',
+        title: 'Customization',
+        href: '/delta/docs/customization',
+      },
+      {
+        title: 'Vision',
+        href: '/delta/docs/vision',
+      },
+      {
+        title: 'Distributed Training',
+        href: '/delta/docs/distributed-training',
+      },
+      {
+        title: 'Integration',
+        href: '/delta/docs/integration',
+      }
+    ],
+  },
+  {
+    title: 'Features',
+    items: [
+      {
+        title: 'Supported Features',
+        href: '/delta/docs/supported-features',
+      },
+      {
+        title: 'Architecture',
+        href: '/delta/docs/architecture',
+      },
+      {
+        title: 'Comparison',
+        href: '/delta/docs/comparison',
       },
     ],
+  },
+  {
+    title: 'Spotlight',
+    href: '/delta/docs/spotlight',
   },
   {
     title: 'Contributors',
