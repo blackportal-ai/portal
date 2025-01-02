@@ -1,0 +1,14 @@
+import { useTypewriter } from '@/hooks/use-typewriter';
+
+const text =
+  'A fast, open-source Rust framework for building scalable neural networks with easy-to-use, customizable APIs and comprehensive ML tools.';
+
+export default function WelcomeMessage() {
+  const displayText = useTypewriter(text, 60);
+
+  return (
+    <div className="mx-auto mb-12 min-h-52 text-3xl font-medium md:min-h-28 md:text-4xl">
+      <h1 className="">{displayText}</h1>
+    </div>
+  );
+}

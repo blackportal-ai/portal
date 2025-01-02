@@ -1,20 +1,19 @@
 import { SiGithub } from 'react-icons/si';
 
 import { Button } from '@/components/ui/Button';
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-} from '@/components/ui/Card';
+import { Card, CardDescription, CardHeader } from '@/components/ui/Card';
 import { Link } from '@/components/ui/Link';
 import { Badge } from '@/components/ui/Badge';
 import DeltaLogo from '@/components/icons/DeltaLogo';
 import NebulaLogo from '@/components/icons/NebulaLogo';
 
+import WelcomeMessage from './WelcomeMessage';
+
 export default function Hero() {
   return (
-    <section className="py-10">
+    <section className="py-20">
       <div className="container mx-auto max-w-5xl">
+        <WelcomeMessage />
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           <Card className="relative overflow-hidden text-center">
@@ -36,13 +35,12 @@ export default function Hero() {
                     <span>Star 200+</span>
                   </Link>
                 </Button>
-
               </div>
             </CardHeader>
           </Card>
 
           <Card className="relative overflow-hidden text-center">
-            <Badge className="absolute left-3 top-3 " variant="secondary">
+            <Badge className="absolute left-3 top-3" variant="secondary">
               Coming Soon
             </Badge>
 
