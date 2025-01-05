@@ -32,7 +32,7 @@ export default function Hero() {
                 <Button variant="secondary" asChild>
                   <Link href="https://github.com/delta-rs/delta">
                     <SiGithub />
-                    <span>Star 200+</span>
+                    <span>Star 300+</span>
                   </Link>
                 </Button>
               </div>
@@ -59,7 +59,7 @@ export default function Hero() {
                 <Button variant="secondary" asChild>
                   <Link href="https://github.com/delta-rs/nebula">
                     <SiGithub />
-                    <span>Star 30</span>
+                    <span>Star 30+</span>
                   </Link>
                 </Button>
               </div>
