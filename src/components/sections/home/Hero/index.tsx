@@ -30,7 +30,7 @@ export default function Hero() {
                 </Button>
 
                 <Button variant="secondary" asChild>
-                  <Link href="https://github.com/blackportal-ai/website">
+                  <Link href="https://github.com/blackportal-ai/delta">
                     <SiGithub />
                     <span>Star 300+</span>
                   </Link>
