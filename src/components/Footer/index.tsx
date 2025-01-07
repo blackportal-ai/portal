@@ -16,7 +16,7 @@ export default function Footer() {
           ))}
         </ul>
 
-        <span>&copy; {new Date().getFullYear()} Delta</span>
+        <span>&copy; {new Date().getFullYear()} Black Portal</span>
       </div>
     </footer>
   );
