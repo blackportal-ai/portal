@@ -30,7 +30,7 @@ export default function Hero() {
                 </Button>
 
                 <Button variant="secondary" asChild>
-                  <Link href="https://github.com/delta-rs/delta">
+                  <Link href="https://github.com/blackportal-ai/delta">
                     <SiGithub />
                     <span>Star 300+</span>
                   </Link>
@@ -57,7 +57,7 @@ export default function Hero() {
                 </Button>
 
                 <Button variant="secondary" asChild>
-                  <Link href="https://github.com/delta-rs/nebula">
+                  <Link href="https://github.com/blackportal-ai/nebula">
                     <SiGithub />
                     <span>Star 30+</span>
                   </Link>
