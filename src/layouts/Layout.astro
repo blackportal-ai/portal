@@ -14,6 +14,7 @@ interface Props {
 
 const { title, description } = Astro.props;
 
+const siteName = 'Black Portal';
 const ogImageUrl = 'https://deltaml.org/images/delta-banner.png';
 ---
 
@@ -22,7 +23,7 @@ const ogImageUrl = 'https://deltaml.org/images/delta-banner.png';
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title} | Delta</title>
+    <title>{title} | {siteName}</title>
     <meta name="description" content={description} />
 
     <!-- Favicons -->
@@ -30,19 +31,19 @@ const ogImageUrl = 'https://deltaml.org/images/delta-banner.png';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Delta Δ" />
+    <meta name="apple-mobile-web-app-title" content={siteName} />
     <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content={`${title} | Delta`} />
+    <meta property="og:title" content={`${title} | ${siteName}`} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content="https://deltaml.org/" />
     <meta property="og:locale" content="en" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Delta" />
+    <meta property="og:site_name" content={siteName} />
     <meta property="og:image" content={ogImageUrl} />
     <!-- Twitter Open Graph -->
-    <meta property="twitter:title" content={`${title} | Delta`} />
+    <meta property="twitter:title" content={`${title} | ${siteName}`} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:site" content="@blackportal_ai" />
