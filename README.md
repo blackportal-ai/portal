@@ -1,6 +1,6 @@
-# Delta Website
+# BlackPortal Website
 
-The official website for Delta.
+The official website for BlackPortal.
 
 ## Contributors
 
