@@ -1,16 +1,15 @@
 import { Link } from '@/components/ui/Link';
-// import DeltaLogo from '@/components/icons/DeltaLogo';
+import BlackPortalLogo from '@/components/icons/BlackPortalLogo';
+import ModeToggle from './ModeToggle';
 
 import { socialLinks } from '@/data/social-links';
-import ModeToggle from './ModeToggle';
 
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-card/80 shadow backdrop-blur">
       <nav className="flex h-16 items-center justify-between px-4">
         <Link className="text-xl font-bold" href="/">
-          Black Portal
-          {/* <DeltaLogo className="h-5 w-auto" /> */}
+          <BlackPortalLogo className="h-6 w-auto" />
         </Link>
 
         <div className="flex items-center gap-4">
