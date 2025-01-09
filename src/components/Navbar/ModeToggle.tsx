@@ -49,7 +49,7 @@ export default function ModeToggle() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          className="rounded-full [&_svg]:size-5 md:[&_svg]:size-4"
+          className="-mr-2 rounded-full md:mr-0 [&_svg]:size-6 md:[&_svg]:size-4"
           variant="ghost"
           size="icon"
         >

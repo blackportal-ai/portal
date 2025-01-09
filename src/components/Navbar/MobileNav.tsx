@@ -18,7 +18,7 @@ export default function MobileNav() {
     <Sheet>
       <SheetTrigger asChild>
         <Button
-          className="md:hidden [&_svg]:size-5"
+          className="-ml-2 md:hidden [&_svg]:size-6"
           variant="ghost"
           size="icon"
         >
