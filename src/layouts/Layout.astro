@@ -33,7 +33,13 @@ const ogImageUrl = 'https://blackportal.ai/images/blackportal-banner.png';
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="BlackPortal" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Theme color -->
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
     <meta
       name="theme-color"
       content="#0f1114"
@@ -48,6 +54,7 @@ const ogImageUrl = 'https://blackportal.ai/images/blackportal-banner.png';
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={siteName} />
     <meta property="og:image" content={ogImageUrl} />
+
     <!-- Twitter Open Graph -->
     <meta property="twitter:title" content={`${title} | ${siteName}`} />
     <meta property="twitter:description" content={description} />
