@@ -1,4 +1,4 @@
-import { SiDiscord, SiGithub, SiX } from 'react-icons/si';
+import { SiDiscord, SiGithub, SiLinkedin, SiX } from 'react-icons/si';
 
 export const socialLinks = [
   {
@@ -15,5 +15,10 @@ export const socialLinks = [
     icon: SiDiscord,
     href: 'https://discord.com/invite/S75dF9Pg',
     label: 'Discord',
+  },
+  {
+    icon: SiLinkedin,
+    href: 'https://www.linkedin.com/company/blackportal',
+    label: 'LinkedIn',
   },
 ];
