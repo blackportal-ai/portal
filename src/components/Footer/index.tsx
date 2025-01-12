@@ -16,6 +16,19 @@ export default function Footer() {
           ))}
         </ul>
 
+        <ul className="flex items-center gap-4">
+          <li>
+            <Link className="hover:text-primary" href="/toc">
+              Terms
+            </Link>
+          </li>
+          <li>
+            <Link className="hover:text-primary" href="/privacy-policy">
+              Privacy Policy
+            </Link>
+          </li>
+        </ul>
+
         <span>&copy; {new Date().getFullYear()} Black Portal</span>
       </div>
     </footer>
