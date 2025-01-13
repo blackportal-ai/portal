@@ -3,7 +3,7 @@ import { SiDiscord, SiGithub, SiLinkedin, SiX } from 'react-icons/si';
 export const socialLinks = [
   {
     icon: SiGithub,
-    href: 'https://github.com/blackportal-ai/delta',
+    href: 'https://github.com/blackportal-ai',
     label: 'GitHub',
   },
   {
