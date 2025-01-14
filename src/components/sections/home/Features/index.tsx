@@ -4,7 +4,7 @@ import FeatureCard from './FeatureCard';
 export default function Features() {
   return (
     <section className="py-20">
-      <div className="container">
+      <div className="container mx-auto max-w-5xl">
         <h2 className="mb-6 text-center text-3xl font-bold">Features</h2>
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
