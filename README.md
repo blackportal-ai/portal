@@ -10,7 +10,7 @@ The official website for BlackPortal.
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/blackportal-ai/website/refs/heads/main/public/images/sevalla_black_logo.png">
     <img alt="Sevalla"
          src="https://raw.githubusercontent.com/blackportal-ai/website/refs/heads/main/public/images/sevalla_white_logo.png"
-         width="55%">
+         width="35%">
   </picture>
 
 <br/>
