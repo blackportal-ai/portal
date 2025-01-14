@@ -1,0 +1,17 @@
+---
+import Team from '@/components/sections/about/Team';
+import Values from '@/components/sections/about/Values';
+import Layout from '@/layouts/Layout.astro';
+---
+
+<Layout title="About">
+  <div class="container py-20 text-center">
+    <h1 class="mx-auto max-w-3xl text-3xl font-bold md:text-4xl">
+      We’re a passionate group of people working from all over the world to
+      build the future of machine learning.
+    </h1>
+  </div>
+
+  <Values />
+  <Team client:load />
+</Layout>
