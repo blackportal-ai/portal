@@ -1,11 +1,5 @@
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/Card';
-
-import { features } from '@/data/features';
+import { deltaFeatures, nebulaFeatures } from '@/data/features';
+import FeatureCard from './FeatureCard';
 
 export default function Features() {
   return (
@@ -13,17 +7,30 @@ export default function Features() {
       <div className="container">
         <h2 className="mb-6 text-center text-3xl font-bold">Features</h2>
 
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-          {features.map(({ icon: Icon, title, text }, idx) => (
-            <Card key={`feature-${idx}`}>
-              <CardHeader>
-                <Icon className="mb-4 h-10 w-10 text-primary" />
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+          <div>
+            <h3 className="mb-3 text-xl font-bold">Delta</h3>
 
-                <CardTitle className="text-xl">{title}</CardTitle>
-                <CardDescription>{text}</CardDescription>
-              </CardHeader>
-            </Card>
-          ))}
+            <ul className="flex flex-col gap-2">
+              {deltaFeatures.map((deltaItem, idx) => (
+                <li key={`delta-feature-item-${idx}`}>
+                  <FeatureCard item={deltaItem} />
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="mb-3 text-xl font-bold">Nebula</h3>
+
+            <ul className="flex flex-col gap-2">
+              {nebulaFeatures.map((nebulaItem, idx) => (
+                <li key={`nebula-feature-item-${idx}`}>
+                  <FeatureCard item={nebulaItem} />
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
