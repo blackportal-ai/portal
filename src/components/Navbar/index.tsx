@@ -19,7 +19,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <ul className="hidden font-semibold md:block">
+          <ul className="hidden items-center gap-4 font-semibold md:flex">
             {mainMenu.map((menuItem, idx) => (
               <li key={`main-menu-item-${idx}`}>
                 <Link className="hover:text-primary" href={menuItem.href}>

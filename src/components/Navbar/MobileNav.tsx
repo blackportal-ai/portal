@@ -31,8 +31,8 @@ export default function MobileNav() {
           <SheetTitle>Menu</SheetTitle>
         </SheetHeader>
 
-        <div className="mt-6 flex flex-col items-center gap-6">
-          <ul className="font-bold">
+        <div className="mt-6 flex flex-col items-center gap-12">
+          <ul className="flex flex-col gap-3 text-center font-bold">
             {mainMenu.map((menuItem, idx) => (
               <li key={`main-menu-item-${idx}`}>
                 <Link className="hover:text-primary" href={menuItem.href}>
@@ -42,7 +42,7 @@ export default function MobileNav() {
             ))}
           </ul>
 
-          <ul className="flex items-center gap-4">
+          <ul className="flex items-center gap-6">
             {socialLinks.map(({ icon: Icon, href }, idx) => (
               <li key={`social-link-${idx}`}>
                 <Link className="hover:text-primary" href={href}>
