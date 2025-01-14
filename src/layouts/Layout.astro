@@ -10,9 +10,10 @@ import '@fontsource/chakra-petch/700.css';
 interface Props {
   title: string;
   description?: string;
+  hideFooter?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title, description, hideFooter } = Astro.props;
 
 const siteName = 'BlackPortal';
 const ogImageUrl = 'https://blackportal.ai/images/blackportal-banner.png';
@@ -72,7 +73,7 @@ const ogImageUrl = 'https://blackportal.ai/images/blackportal-banner.png';
         <slot />
       </div>
 
-      <Footer />
+      {!hideFooter && <Footer />}
     </div>
   </body>
 </html>
