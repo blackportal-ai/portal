@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { SidebarInset, SidebarProvider } from '@/components/ui/Sidebar';
 import { TOC } from '@/components/ui/TOC';
+import Footer from '@/components/Footer';
 import DocsSidebar from './DocsSidebar';
 import DocsHeader from './DocsHeader';
 
@@ -33,7 +34,7 @@ export default function DocsLayoutContent({
 
         <div
           className={cn(
-            'grid grid-cols-1 gap-8 p-4 md:p-8',
+            'grid grow grid-cols-1 gap-8 p-4 md:p-8',
             !!headings ? 'xl:grid-cols-[1fr_300px]' : '',
           )}
         >
@@ -49,6 +50,8 @@ export default function DocsLayoutContent({
             </div>
           ) : null}
         </div>
+
+        <Footer isDocs />
       </SidebarInset>
     </SidebarProvider>
   );
