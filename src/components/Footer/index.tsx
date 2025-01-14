@@ -87,7 +87,7 @@ export default function Footer({ isDocs }: Props) {
             </div>
 
             <span className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} Black Portal
+              &copy; {new Date().getFullYear()} BlackPortal
             </span>
           </div>
         </div>
