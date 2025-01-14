@@ -2,7 +2,11 @@ import { Link } from '@/components/ui/Link';
 import BlackPortalLogo from '@/components/icons/BlackPortalLogo';
 
 import { socialLinks } from '@/data/social-links';
-import { footerCompanyLinks } from '@/data/footer-links';
+import {
+  footerCompanyLinks,
+  footerDeltaLinks,
+  footerNebulaLinks,
+} from '@/data/footer-links';
 import { cn } from '@/lib/utils';
 
 type Props = {
@@ -14,7 +18,41 @@ export default function Footer({ isDocs }: Props) {
     <footer className="border-t">
       <div className={cn(isDocs ? 'px-4 md:px-8' : 'container')}>
         <div className="grid grid-cols-1 gap-10 py-10 lg:grid-cols-4">
-          <div className="lg:col-span-3">
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:col-span-3">
+            <div>
+              <h2 className="mb-2 font-bold">Delta</h2>
+
+              <ul className="flex flex-col gap-1 text-muted-foreground">
+                {footerDeltaLinks.map((companyLink, idx) => (
+                  <li key={`footer-delta-link-${idx}`}>
+                    <Link
+                      className="hover:text-primary"
+                      href={companyLink.href}
+                    >
+                      {companyLink.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="mb-2 font-bold">Nebula</h2>
+
+              <ul className="flex flex-col gap-1 text-muted-foreground">
+                {footerNebulaLinks.map((companyLink, idx) => (
+                  <li key={`footer-nebula-link-${idx}`}>
+                    <Link
+                      className="hover:text-primary"
+                      href={companyLink.href}
+                    >
+                      {companyLink.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             <div>
               <h2 className="mb-2 font-bold">Company</h2>
 
@@ -33,7 +71,7 @@ export default function Footer({ isDocs }: Props) {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-between gap-6 md:items-end">
+          <div className="flex flex-col items-center justify-between gap-6 lg:items-end">
             <div className="flex flex-col items-end gap-4">
               <BlackPortalLogo className="h-7 w-auto" />
 
