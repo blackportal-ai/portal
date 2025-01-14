@@ -37,37 +37,37 @@ export const deltaFeatures: Feature[] = [
 export const nebulaFeatures: Feature[] = [
   {
     title: 'Command-line tool',
-    text: 'Manage datasets and models directly from a powerful CLI.',
+    text: 'Manage datasets and models directly from a powerful CLI, providing full control over your workflow without leaving the terminal.',
     isFuture: true,
   },
   {
     title: 'Virtual environments',
-    text: 'Run multiple ML projects on the same machine without conflicts.',
+    text: 'Run multiple ML projects on the same machine without conflicts, ensuring that dependencies are isolated for seamless development.',
     isFuture: true,
   },
   {
     title: 'Dataset management',
-    text: 'Organize datasets by metadata, versions, variants, dependencies, and lifecycles.',
+    text: 'Organize datasets efficiently by metadata, versions, variants, dependencies, and lifecycles, enabling easy tracking and reproducibility.',
     isFuture: true,
   },
   {
     title: 'Pretrained models',
-    text: 'Access and manage pretrained models with versioning and adaptations.',
+    text: 'Access and manage pretrained models with versioning and adaptations, enabling easy integration into your projects and reducing time spent on training.',
     isFuture: true,
   },
   {
     title: 'Template projects',
-    text: 'Use prebuilt templates based on the Delta framework for faster setup.',
+    text: 'Use prebuilt templates based on the Delta framework for faster setup, allowing you to quickly begin experiments with minimal configuration.',
     isFuture: true,
   },
   {
     title: 'Public registry',
-    text: 'Browse datasets and models shared by the community in the Nebula registry.',
+    text: 'Browse datasets and models shared by the community in the Nebula registry, ensuring access to high-quality resources for your projects.',
     isFuture: true,
   },
   {
     title: 'Private registry',
-    text: 'Host your own Nebula registry for secure and confidential work.',
+    text: 'Host your own Nebula registry for secure and confidential work, keeping sensitive data and models private while maintaining efficient access management.',
     isFuture: true,
   },
 ];
