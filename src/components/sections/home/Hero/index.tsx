@@ -59,7 +59,7 @@ export default function Hero() {
                 <Button variant="secondary" asChild>
                   <Link href="https://github.com/blackportal-ai/nebula">
                     <SiGithub />
-                    <span>Star 40+</span>
+                    <span>Star 50+</span>
                   </Link>
                 </Button>
               </div>
