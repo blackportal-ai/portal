@@ -4,6 +4,7 @@ export const team = [
   {
     name: 'Marcus Cvjeticanin',
     image: 'https://avatars.githubusercontent.com/u/33717111?v=4',
+    position: 'Founder & Lead Architect, Delta',
     socialLinks: [
       {
         icon: SiX,
@@ -25,6 +26,7 @@ export const team = [
   {
     name: 'Chase Willden',
     image: 'https://avatars.githubusercontent.com/u/3342754?v=4',
+    position: 'Co-founder & Architect, Delta',
     socialLinks: [
       {
         icon: SiX,
@@ -46,6 +48,7 @@ export const team = [
   {
     name: 'Tim Janus',
     image: 'https://avatars.githubusercontent.com/u/5418311?v=4',
+    position: 'Lead Architect, Nebula',
     socialLinks: [
       {
         icon: SiX,
@@ -67,6 +70,7 @@ export const team = [
   {
     name: 'Robin Hallabro-Kokko',
     image: 'https://avatars.githubusercontent.com/u/44033026?v=4',
+    position: 'Infrastructure Lead',
     socialLinks: [
       {
         icon: SiX,
@@ -88,6 +92,7 @@ export const team = [
   {
     name: 'Sviatoslav Makhynko',
     image: 'https://avatars.githubusercontent.com/u/33163056?v=4',
+    position: 'Frontend Architect',
     socialLinks: [
       {
         icon: SiX,

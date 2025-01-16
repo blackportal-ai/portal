@@ -41,6 +41,7 @@ export default function Team() {
                   </Avatar>
 
                   <CardTitle className="text-xl">{member.name}</CardTitle>
+                  <CardDescription>{member.position}</CardDescription>
 
                   <CardDescription>
                     <ul className="mt-4 flex items-center gap-6">
