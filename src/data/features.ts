@@ -3,7 +3,7 @@ import type { Feature } from '@/types/features';
 export const deltaFeatures: Feature[] = [
   {
     title: 'Fast',
-    text: 'It is designed to be fast, ensuring minimal overhead in model training and deployment workflows.',
+    text: 'Built with Rust, Δ is designed for high performance, making it ideal for compute-intensive machine learning tasks.',
   },
   {
     title: 'Usability',
@@ -14,7 +14,7 @@ export const deltaFeatures: Feature[] = [
     text: 'The framework is modular, allowing users to plug in custom layers, optimizers, or preprocessing pipelines tailored to their unique needs.',
   },
   {
-    title: 'Efficient and scalable tools',
+    title: 'Efficient and Scalable Tools',
     text: 'It provides highly efficient and scalable tools for building and training neural networks, supporting both small-scale experiments and large-scale production systems.',
   },
   {
