@@ -76,10 +76,14 @@ export default function Footer({ isDocs }: Props) {
               <BlackPortalLogo className="h-7 w-auto" />
 
               <ul className="flex items-center gap-5 text-muted-foreground">
-                {socialLinks.map(({ icon: Icon, href }, idx) => (
+                {socialLinks.map((socialLink, idx) => (
                   <li key={`footer-social-link-${idx}`}>
-                    <Link className="hover:text-primary" href={href}>
-                      <Icon className="h-5 w-5" />
+                    <Link
+                      className="hover:text-primary"
+                      href={socialLink.href}
+                      aria-label={socialLink.label}
+                    >
+                      <socialLink.icon className="h-5 w-5" />
                     </Link>
                   </li>
                 ))}
