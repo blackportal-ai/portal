@@ -1,0 +1,24 @@
+---
+title: Backends
+---
+
+# Backends
+
+We want to leverage hardware acceleration on as many platforms as possible to optimize machine learning workloads. While the current support is limited to macOS with **Metal**, the framework is actively evolving to support a diverse range of computational devices.
+
+## Current Support
+
+Below is a detailed table of supported backends and their current status:
+
+| Backend       | Description                                     | Current Status     |
+|--------------------|-------------------------------------------------|--------------------|
+| **CPU**            | Central Processing Unit, available on all platforms. | ✅ Supported       |
+| **Metal**          | macOS-specific GPU acceleration using Metal API. | ✅ Supported       |
+| **CUDA**           | NVIDIA GPU acceleration using the CUDA API.     | 🚧 Planned         |
+| **OpenCL**         | Cross-platform GPU acceleration using OpenCL.   | 🚧 Planned         |
+| **OpenCL (CUDA)**  | Specialized OpenCL for NVIDIA GPUs.             | 🚧 Planned         |
+| **Vulkan**         | Cross-platform GPU support using Vulkan.        | 🚧 Planned         |
+| **DirectX12**      | Windows GPU acceleration via DirectX 12.        | 🚧 Planned         |
+| **SYCL**           | Intel's SYCL API for heterogeneous computing.   | 🚧 Planned         |
+| **TPUs**           | Google's Tensor Processing Units for ML tasks.  | 🚧 Planned         |
+| **WebGPU**         | Lightweight GPU support for web-based environments. | 🚧 Planned         |

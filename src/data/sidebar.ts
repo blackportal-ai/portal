@@ -12,10 +12,6 @@ export const deltaMenu: SidebarItem[] = [
         title: 'Getting Started',
         href: '/delta/docs/getting-started',
       },
-      {
-        title: 'Dataset Support',
-        href: '/delta/docs/dataset-support',
-      },
     ],
   },
   {
@@ -43,12 +39,12 @@ export const deltaMenu: SidebarItem[] = [
     title: 'Features',
     items: [
       {
-        title: 'Supported Features',
-        href: '/delta/docs/supported-features',
+        title: 'Datasets',
+        href: '/delta/docs/datasets',
       },
       {
-        title: 'Architecture',
-        href: '/delta/docs/architecture',
+        title: 'Backends',
+        href: '/delta/docs/backends',
       },
       {
         title: 'Comparison',
