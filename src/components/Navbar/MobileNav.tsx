@@ -43,10 +43,14 @@ export default function MobileNav() {
           </ul>
 
           <ul className="flex items-center gap-6">
-            {socialLinks.map(({ icon: Icon, href }, idx) => (
+            {socialLinks.map((socialLink, idx) => (
               <li key={`social-link-${idx}`}>
-                <Link className="hover:text-primary" href={href}>
-                  <Icon className="h-4 w-4" />
+                <Link
+                  className="hover:text-primary"
+                  href={socialLink.href}
+                  aria-label={socialLink.label}
+                >
+                  <socialLink.icon className="h-4 w-4" />
                 </Link>
               </li>
             ))}
