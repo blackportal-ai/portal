@@ -1,4 +1,10 @@
-import { SiDiscord, SiGithub, SiLinkedin, SiX } from 'react-icons/si';
+import {
+  SiDiscord,
+  SiGithub,
+  SiLinkedin,
+  SiX,
+  SiYoutube,
+} from 'react-icons/si';
 
 export const socialLinks = [
   {
@@ -20,5 +26,10 @@ export const socialLinks = [
     icon: SiLinkedin,
     href: 'https://www.linkedin.com/company/blackportal',
     label: 'LinkedIn',
+  },
+  {
+    icon: SiYoutube,
+    href: 'https://www.youtube.com/@BlackPortal_AI',
+    label: 'YouTube',
   },
 ];
