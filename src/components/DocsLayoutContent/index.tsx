@@ -38,7 +38,7 @@ export default function DocsLayoutContent({
             !!headings ? 'xl:grid-cols-[1fr_300px]' : '',
           )}
         >
-          <div className="prose prose-sm grid max-w-full grid-cols-1 dark:prose-invert">
+          <div className="prose prose-sm max-w-full dark:prose-invert">
             {children}
           </div>
 
