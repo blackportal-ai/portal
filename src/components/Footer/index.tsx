@@ -18,7 +18,31 @@ export default function Footer({ isDocs }: Props) {
     <footer className="border-t">
       <div className={cn(isDocs ? 'px-4 md:px-8' : 'container')}>
         <div className="grid grid-cols-1 gap-10 py-10 lg:grid-cols-4">
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:col-span-3">
+          <div className="order-2 flex flex-col items-center justify-between gap-6 lg:order-1 lg:items-start">
+            <div className="flex flex-col items-start gap-4">
+              <BlackPortalLogo className="h-7 w-auto" />
+
+              <ul className="flex items-center gap-5 text-muted-foreground">
+                {socialLinks.map((socialLink, idx) => (
+                  <li key={`footer-social-link-${idx}`}>
+                    <Link
+                      className="hover:text-primary"
+                      href={socialLink.href}
+                      aria-label={socialLink.label}
+                    >
+                      <socialLink.icon className="h-5 w-5" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <span className="text-sm text-muted-foreground">
+              &copy; {new Date().getFullYear()} BlackPortal
+            </span>
+          </div>
+
+          <div className="order-1 grid grid-cols-2 gap-6 md:grid-cols-3 lg:order-2 lg:col-span-3 lg:justify-items-end">
             <div>
               <h2 className="mb-2 font-bold">Delta</h2>
 
@@ -69,30 +93,6 @@ export default function Footer({ isDocs }: Props) {
                 ))}
               </ul>
             </div>
-          </div>
-
-          <div className="flex flex-col items-center justify-between gap-6 lg:items-end">
-            <div className="flex flex-col items-end gap-4">
-              <BlackPortalLogo className="h-7 w-auto" />
-
-              <ul className="flex items-center gap-5 text-muted-foreground">
-                {socialLinks.map((socialLink, idx) => (
-                  <li key={`footer-social-link-${idx}`}>
-                    <Link
-                      className="hover:text-primary"
-                      href={socialLink.href}
-                      aria-label={socialLink.label}
-                    >
-                      <socialLink.icon className="h-5 w-5" />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <span className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} BlackPortal
-            </span>
           </div>
         </div>
       </div>
