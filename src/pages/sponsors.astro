@@ -1,0 +1,26 @@
+---
+import SevallaLogo from '@/components/icons/SevallaLogo';
+import Layout from '@/layouts/Layout.astro';
+---
+
+<Layout title="Sponsors">
+  <div class="container mx-auto max-w-3xl py-20">
+    <div class="mb-16 text-center">
+      <h1 class="text-3xl font-bold md:text-4xl">Our Sponsors</h1>
+    </div>
+
+    <section>
+      <div class="flex flex-col items-center gap-6">
+        <SevallaLogo className="h-24" />
+
+        <p class="text-center text-xl text-muted-foreground">
+          Sevalla is a powerful platform for hosting and managing applications,
+          databases, and static sites. They are supporting our project by
+          providing free hosting for our website and upcoming services, as well
+          as sponsoring us on GitHub. This support helps BlackPortal grow and
+          enables us to host future projects like the Nebula registry and more.
+        </p>
+      </div>
+    </section>
+  </div>
+</Layout>

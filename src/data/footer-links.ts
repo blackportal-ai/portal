@@ -2,6 +2,10 @@ import type { MenuItem } from '@/types/menu';
 
 export const footerCompanyLinks: MenuItem[] = [
   {
+    title: 'Sponsors',
+    href: '/sponsors',
+  },
+  {
     title: 'About',
     href: '/about',
   },
