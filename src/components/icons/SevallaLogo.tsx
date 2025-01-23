@@ -15,9 +15,9 @@ export default function SevallaLogo({ className }: Props) {
     >
       <path
         className="fill-[#f97316]"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M33.901 0c-18.225 0-33 14.775-33 33v120c0 18.225 14.775 33 33 33h126c18.226 0 33-14.775 33-33V33c0-18.225-14.774-33-33-33h-126zM116 41H73v23H51v17.721a10 10 0 003.095 7.234L73 107H51v22h22v23h43v-23h22v-17.721a10 10 0 00-3.095-7.234L116 86h22V64h-22V41zm0 23v22H83c-5.523 0-10-4.477-10-10V64h43zm0 65H73v-22h33c5.523 0 10 4.477 10 10v12z"
-        clip-rule="evenodd"
+        clipRule="evenodd"
       ></path>
       <path
         className="fill-black dark:fill-white"
