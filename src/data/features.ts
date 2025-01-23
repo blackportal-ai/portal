@@ -18,13 +18,12 @@ export const deltaFeatures: Feature[] = [
     text: 'It provides highly efficient and scalable tools for building and training neural networks, supporting both small-scale experiments and large-scale production systems.',
   },
   {
-    title: 'Distributed and Parallel Training',
-    text: 'Native support for distributed and parallel training ensures that Delta scales effortlessly across multi-core systems and cloud environments.',
-    isFuture: true,
-  },
-  {
     title: 'Classical ML',
     text: 'Includes support for classical ML algorithms such as decision trees, random forests, SVMs and more.',
+  },
+  {
+    title: 'Distributed and Parallel Training',
+    text: 'Native support for distributed and parallel training ensures that Delta scales effortlessly across multi-core systems and cloud environments.',
     isFuture: true,
   },
   {
