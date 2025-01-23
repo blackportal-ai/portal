@@ -6,6 +6,10 @@ export const footerCompanyLinks: MenuItem[] = [
     href: '/sponsors',
   },
   {
+    title: 'Brand',
+    href: '/brand',
+  },
+  {
     title: 'About',
     href: '/about',
   },
