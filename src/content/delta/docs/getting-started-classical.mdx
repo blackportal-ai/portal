@@ -1,0 +1,36 @@
+---
+title: Getting Started - Classical ML
+---
+
+# Getting Started with Delta with Classical ML
+
+## Adding Delta to Your Project
+
+To add the Delta library to your Rust project, you need to include it in your
+`Cargo.toml` file. Follow these steps:
+
+1. Open your project's `Cargo.toml` file.
+2. Add the following line under `[dependencies]`:
+
+```toml title="Cargo.toml"
+[dependencies]
+deltaml = "0.1.0"
+```
+
+Currently, we have published Delta to [deltaml](https://crates.io/crates/deltaml), but note that this is still
+experimental in alpha stage so things might break in the upcoming iterations.
+
+## Delta Usage Example
+
+### 1. Create the `main` Function
+
+We start with an empty asynchronous main function using `#[tokio::main]`.
+
+```rust title="src/main.rs"
+#[tokio::main]
+async fn main() {
+    println!("Starting the Delta example...");
+}
+```
+
+### 2. Coming more soon...

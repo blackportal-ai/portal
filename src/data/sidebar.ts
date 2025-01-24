@@ -9,8 +9,12 @@ export const deltaMenu: SidebarItem[] = [
     title: 'Beginners',
     items: [
       {
-        title: 'Getting Started',
-        href: '/delta/docs/getting-started',
+        title: 'Getting Started - Classical ML',
+        href: '/delta/docs/getting-started-classical',
+      },
+      {
+        title: 'Getting Started - Deep Learning',
+        href: '/delta/docs/getting-started-deep-learning',
       },
     ],
   },
