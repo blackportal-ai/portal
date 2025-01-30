@@ -21,8 +21,12 @@ export default function Values() {
             <li key={`value-${idx}`}>
               <Card className="h-full">
                 <CardHeader>
+                  <div className="pb-2">
+                    <value.icon className="h-6 w-6" />
+                  </div>
+
                   <CardTitle className="text-xl">{value.title}</CardTitle>
-                  <CardDescription className="text-lg">
+                  <CardDescription className="text-lg leading-snug">
                     {value.text}
                   </CardDescription>
                 </CardHeader>
