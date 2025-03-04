@@ -5,3 +5,10 @@ updates:
     schedule:
       interval: 'weekly'
     open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: tailwindcss
+        versions:
+          - '>=4'
+      - dependency-name: tailwind-merge
+        versions:
+          - '>=3'
