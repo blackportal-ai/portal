@@ -11,7 +11,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/mdx": "^4.2.1",
-    "@astrojs/react": "^4.2.1",
+    "@astrojs/react": "^4.2.2",
     "@astrojs/tailwind": "^5.1.5",
     "@fontsource/chakra-petch": "^5.2.5",
     "@hookform/resolvers": "^4.1.3",
