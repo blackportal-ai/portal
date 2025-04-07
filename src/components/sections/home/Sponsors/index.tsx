@@ -1,5 +1,5 @@
 import SevallaLogo from '@/components/icons/SevallaLogo';
-import { Card, CardHeader } from '@/components/ui/Card';
+import { Card } from '@/components/ui/Card';
 import { Link } from '@/components/ui/Link';
 
 const sponsors = [
@@ -19,10 +19,8 @@ export default function Sponsors() {
           {sponsors.map((sponsor, idx) => (
             <li key={`sponsor-${idx}`}>
               <Link href={sponsor.href}>
-                <Card>
-                  <CardHeader className="p-4">
-                    <sponsor.logo className="h-12" />
-                  </CardHeader>
+                <Card className="p-4">
+                  <sponsor.logo className="h-12" />
                 </Card>
               </Link>
             </li>

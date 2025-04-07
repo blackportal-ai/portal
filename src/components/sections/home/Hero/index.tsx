@@ -16,7 +16,7 @@ export default function Hero() {
         <WelcomeMessage />
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <Card className="relative overflow-hidden text-center">
+          <Card className="relative overflow-hidden p-0 text-center">
             <CardHeader className="hero-delta space-y-4 p-12">
               <DeltaLogo className="mx-auto h-12 w-auto" />
 
@@ -39,8 +39,8 @@ export default function Hero() {
             </CardHeader>
           </Card>
 
-          <Card className="relative overflow-hidden text-center">
-            <Badge className="absolute left-3 top-3" variant="secondary">
+          <Card className="relative overflow-hidden p-0 text-center">
+            <Badge className="absolute top-3 left-3" variant="secondary">
               Coming Soon
             </Badge>
 
