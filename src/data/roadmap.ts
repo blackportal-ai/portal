@@ -21,16 +21,6 @@ export const deltaRoadmap: RoadmapItem[] = [
     "quarter": "2026 Q4",
     "description": "Expanding Delta’s backend support with OpenCL for cross-platform GPU acceleration and Vulkan for modern, portable GPU computing, optimizing classical ML workloads."
   },
-  {
-    "title": "Windows and Intel Backend Support",
-    "quarter": "2027 Q2",
-    "description": "Integrating DirectX12 for Windows GPU acceleration and SYCL for Intel’s heterogeneous computing, enhancing Delta’s reach for classical ML on diverse hardware."
-  },
-  {
-    "title": "Specialized and Web Backend Support",
-    "quarter": "2027 Q4",
-    "description": "Completing Delta’s backend suite with TPUs for Google Cloud acceleration, WebGPU for web-based ML, and specialized OpenCL (CUDA) for NVIDIA compatibility, optimizing classical ML across all platforms."
-  }
 ];
 
 export const nebulaRoadmap: RoadmapItem[] = [
