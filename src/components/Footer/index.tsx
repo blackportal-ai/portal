@@ -15,14 +15,14 @@ type Props = {
 
 export default function Footer({ isDocs }: Props) {
   return (
-    <footer className="border-t">
+    <footer className="bg-background border-t">
       <div className={cn(isDocs ? 'px-4 md:px-8' : 'container')}>
         <div className="grid grid-cols-1 gap-10 py-10 lg:grid-cols-4">
           <div className="order-2 flex flex-col items-center justify-between gap-6 lg:order-1 lg:items-start">
             <div className="flex flex-col items-start gap-4">
               <BlackPortalLogo className="h-7 w-auto" />
 
-              <ul className="flex items-center gap-5 text-muted-foreground">
+              <ul className="text-muted-foreground flex items-center gap-5">
                 {socialLinks.map((socialLink, idx) => (
                   <li key={`footer-social-link-${idx}`}>
                     <Link
@@ -37,7 +37,7 @@ export default function Footer({ isDocs }: Props) {
               </ul>
             </div>
 
-            <span className="text-sm text-muted-foreground">
+            <span className="text-muted-foreground text-sm">
               &copy; {new Date().getFullYear()} BlackPortal
             </span>
           </div>
@@ -46,7 +46,7 @@ export default function Footer({ isDocs }: Props) {
             <div>
               <h2 className="mb-2 font-bold">Delta</h2>
 
-              <ul className="flex flex-col gap-1 text-muted-foreground">
+              <ul className="text-muted-foreground flex flex-col gap-1">
                 {footerDeltaLinks.map((companyLink, idx) => (
                   <li key={`footer-delta-link-${idx}`}>
                     <Link
@@ -63,7 +63,7 @@ export default function Footer({ isDocs }: Props) {
             <div>
               <h2 className="mb-2 font-bold">Nebula</h2>
 
-              <ul className="flex flex-col gap-1 text-muted-foreground">
+              <ul className="text-muted-foreground flex flex-col gap-1">
                 {footerNebulaLinks.map((companyLink, idx) => (
                   <li key={`footer-nebula-link-${idx}`}>
                     <Link
@@ -80,7 +80,7 @@ export default function Footer({ isDocs }: Props) {
             <div>
               <h2 className="mb-2 font-bold">Company</h2>
 
-              <ul className="flex flex-col gap-1 text-muted-foreground">
+              <ul className="text-muted-foreground flex flex-col gap-1">
                 {footerCompanyLinks.map((companyLink, idx) => (
                   <li key={`footer-company-link-${idx}`}>
                     <Link
