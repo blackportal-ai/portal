@@ -1,4 +1,5 @@
 ---
+import AnimatedBackground from '@/components/AnimatedBackground';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import '@/styles/globals.css';
@@ -11,9 +12,10 @@ interface Props {
   title: string;
   description?: string;
   hideFooter?: boolean;
+  hideAnimatedBackground?: boolean;
 }
 
-const { title, description, hideFooter } = Astro.props;
+const { title, description, hideFooter, hideAnimatedBackground } = Astro.props;
 
 const siteName = 'BlackPortal';
 const ogImageUrl = 'https://blackportal.ai/images/blackportal-banner.png';
@@ -70,6 +72,8 @@ const ogImageUrl = 'https://blackportal.ai/images/blackportal-banner.png';
       <Navbar client:load />
 
       <div class="grow">
+        {!hideAnimatedBackground && <AnimatedBackground client:load />}
+
         <slot />
       </div>
 

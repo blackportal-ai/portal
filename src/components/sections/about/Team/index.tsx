@@ -12,7 +12,7 @@ import { team } from '@/data/team';
 
 export default function Team() {
   return (
-    <section className="py-20">
+    <section className="animate-in fade-in py-20 duration-1000">
       <div className="container">
         <div className="mb-10 text-center">
           <h2 className="mb-3 text-3xl font-bold md:text-4xl">

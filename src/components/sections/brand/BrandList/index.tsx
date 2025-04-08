@@ -10,7 +10,7 @@ type Props = {
 
 export default function BrandList({ title, logos }: Props) {
   return (
-    <section className="py-20">
+    <section className="animate-in fade-in py-20 duration-1000">
       <div className="container">
         <h2 className="mb-6 text-center text-3xl font-bold">{title}</h2>
 

@@ -7,15 +7,19 @@ import { Badge } from '@/components/ui/Badge';
 import DeltaLogo from '@/components/icons/DeltaLogo';
 import NebulaLogo from '@/components/icons/NebulaLogo';
 
-import WelcomeMessage from './WelcomeMessage';
-
 export default function Hero() {
   return (
-    <section className="py-20">
+    <section className="animate-in fade-in py-20 duration-500">
       <div className="container mx-auto max-w-5xl">
-        <WelcomeMessage />
+        <div className="animate-in slide-in-from-bottom-20 mb-12 duration-700">
+          <h1 className="text-center text-3xl font-bold md:text-4xl">
+            A fast, open-source Rust solution for building scalable neural
+            networks with easy-to-use, customizable APIs and comprehensive ML
+            tools.
+          </h1>
+        </div>
 
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div className="animate-in slide-in-from-bottom-20 grid grid-cols-1 gap-6 duration-700 lg:grid-cols-2">
           <Card className="relative overflow-hidden p-0 text-center">
             <CardHeader className="hero-delta space-y-4 p-12">
               <DeltaLogo className="mx-auto h-12 w-auto" />

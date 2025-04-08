@@ -1,12 +1,12 @@
 ---
+import BrandHero from '@/components/sections/brand/BrandHero';
 import BrandList from '@/components/sections/brand/BrandList';
-import BrandMessage from '@/components/sections/brand/BrandMessage';
 import { blackPortalLogos, deltaLogos, nebulaLogos } from '@/data/brand';
 import Layout from '@/layouts/Layout.astro';
 ---
 
 <Layout title="Brand">
-  <BrandMessage client:load />
+  <BrandHero />
 
   <BrandList title="BlackPortal Logo" logos={blackPortalLogos} />
   <BrandList title="Delta Logo" logos={deltaLogos} />

@@ -11,9 +11,13 @@ interface Props {
 const { frontmatter } = Astro.props;
 ---
 
-<Layout title={frontmatter.title} description={frontmatter.description}>
+<Layout
+  title={frontmatter.title}
+  description={frontmatter.description}
+  hideAnimatedBackground
+>
   <div class="container">
-    <div class="prose prose-sm max-w-full py-4 dark:prose-invert md:py-8">
+    <div class="prose prose-sm dark:prose-invert max-w-full py-4 md:py-8">
       <slot />
     </div>
   </div>

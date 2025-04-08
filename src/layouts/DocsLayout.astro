@@ -17,7 +17,12 @@ interface Props {
 const { title, description, sidebarKey, breadcrumb, headings } = Astro.props;
 ---
 
-<Layout title={title} description={description} hideFooter>
+<Layout
+  title={title}
+  description={description}
+  hideFooter
+  hideAnimatedBackground
+>
   <DocsLayoutContent
     client:load
     sidebarKey={sidebarKey}
