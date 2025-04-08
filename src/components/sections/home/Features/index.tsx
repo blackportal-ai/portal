@@ -3,7 +3,7 @@ import FeatureCard from './FeatureCard';
 
 export default function Features() {
   return (
-    <section className="py-20">
+    <section className="animate-in fade-in py-20 duration-1000">
       <div className="container mx-auto max-w-5xl">
         <h2 className="mb-6 text-center text-3xl font-bold">Features</h2>
 

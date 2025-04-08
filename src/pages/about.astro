@@ -1,12 +1,12 @@
 ---
-import AboutMessage from '@/components/sections/about/AboutMessage';
+import AboutHero from '@/components/sections/about/AboutHero';
 import Team from '@/components/sections/about/Team';
 import Values from '@/components/sections/about/Values';
 import Layout from '@/layouts/Layout.astro';
 ---
 
 <Layout title="About">
-  <AboutMessage client:load />
+  <AboutHero />
 
   <Values />
   <Team client:load />
