@@ -18,7 +18,7 @@ export default function Team() {
           <h2 className="mb-3 text-3xl font-bold md:text-4xl">
             It’s All About the People
           </h2>
-          <p className="mx-auto max-w-3xl text-xl text-muted-foreground">
+          <p className="text-muted-foreground mx-auto max-w-3xl text-xl">
             We’re always on the lookout for passionate individuals to join our
             team. If you’re excited about advancing the future of machine
             learning, we’d love to hear from you!
@@ -32,7 +32,7 @@ export default function Team() {
           {team.map((member, idx) => (
             <li key={`member-${idx}`}>
               <Card className="h-full">
-                <CardHeader className="items-center">
+                <CardHeader className="place-items-center">
                   <Avatar className="mb-3 h-24 w-24">
                     <AvatarImage src={member.image} alt={member.name} />
                     <AvatarFallback className="uppercase">
