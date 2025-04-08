@@ -12,10 +12,10 @@ export const deltaMenu: SidebarItem[] = [
         title: 'Intro - Classical ML',
         href: '/delta/docs/intro-classical',
       },
-      {
-        title: 'Intro - Deep Learning',
-        href: '/delta/docs/intro-deep-learning',
-      },
+      // {
+      //   title: 'Intro - Deep Learning',
+      //   href: '/delta/docs/intro-deep-learning',
+      // },
     ],
   },
   {
