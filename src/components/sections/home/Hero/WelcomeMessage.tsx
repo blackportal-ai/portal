@@ -1,7 +1,7 @@
 import { useTypewriter } from '@/hooks/use-typewriter';
 
 const text =
-  'A fast, open-source Rust solution for building scalable machine learning models with easy-to-use, customizable APIs and comprehensive classical ML tools.';
+  'A fast, open-source Rust solution for building scalable machine learning models with easy-to-use, customizable APIs and comprehensive tools.';
 
 export default function WelcomeMessage() {
   const displayText = useTypewriter(text, 60);

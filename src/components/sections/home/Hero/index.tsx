@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="container mx-auto max-w-5xl">
         <div className="animate-in slide-in-from-bottom-20 mb-12 duration-700">
           <h1 className="text-center text-3xl font-bold md:text-4xl">
-            A fast, open-source Rust solution for building scalable machine learning models with easy-to-use, customizable APIs and comprehensive classical ML tools.
+            A fast, open-source Rust solution for building scalable machine learning models with easy-to-use, customizable APIs and comprehensive tools.
           </h1>
         </div>
 
