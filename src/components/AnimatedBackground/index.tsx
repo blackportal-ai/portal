@@ -13,6 +13,8 @@ export default function AnimatedBackground() {
   const [theme, setTheme] = React.useState<'light' | 'dark'>('dark');
 
   React.useEffect(() => {
+    handleTheme();
+
     const observer = new MutationObserver(handleTheme);
 
     observer.observe(document.documentElement, {
