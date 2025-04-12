@@ -19,7 +19,7 @@ export const socialLinks = [
   },
   {
     icon: SiDiscord,
-    href: 'https://discord.com/invite/S75dF9Pg',
+    href: 'https://discord.gg/g5HtkAzRNG',
     label: 'Discord',
   },
   {
