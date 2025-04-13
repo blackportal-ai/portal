@@ -30,8 +30,23 @@ export const deltaRoadmap: RoadmapItem[] = [
 
 export const nebulaRoadmap: RoadmapItem[] = [
   {
-    title: 'MVP of Nebula',
+    title: 'Nebula CLI and Registry Prototypes',
     quarter: '2025 Q2',
-    description: 'Introducing a data format specification for datasets and models and a registry API service. It also features a CLI tool for interacting with the registry.',
+    description: 'Prototypes for a CLI client to install datasets and models from a Nebula registry and a read-only registry serving assets from the filesystem.',
   },
+  {
+    title: 'MVP of Nebula',
+    quarter: '2025 Q4',
+    description: 'Introduction of a standardized data format for datasets and models, a registry API service, and a CLI tool with functionality to search and filter available assets.',
+  },
+  {
+    title: 'Nebula - Creator Expansion',
+    quarter: '2026 Q2',
+    description: 'Enable the Nebula CLI to create new datasets and models through transfer learning or data augmentation, with functionality to share them back to the registry.'
+  },
+  {
+    title: 'Embedded Support',
+    quarter: '2026 Q4',
+    description: 'Introduce a lightweight Nebula client for embedded devices to collect training data and deploy updated models seamlessly via wired or wireless connections.'
+  }
 ];
