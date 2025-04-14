@@ -30,7 +30,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
     "@types/canvas-confetti": "^1.9.0",
-    "@types/react": "^19.1.0",
+    "@types/react": "^19.1.1",
     "@types/react-dom": "^19.1.1",
     "astro": "^5.6.1",
     "astro-expressive-code": "^0.40.2",
