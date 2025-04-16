@@ -2,6 +2,19 @@
 
 The official website for BlackPortal.
 
+## Development
+
+```sh
+# Install dependencies
+npm i
+
+# Need for mermaid
+npx playwright install --with-deps chromium
+
+# Run
+npm run dev
+```
+
 ## Sponsors
 
 <div align="left">
