@@ -33,10 +33,6 @@ export const deltaMenu: SidebarItem[] = [
         title: 'Distributed Training',
         href: '/delta/docs/distributed-training',
       },
-      {
-        title: 'Integration',
-        href: '/delta/docs/integration',
-      }
     ],
   },
   {
@@ -54,6 +50,10 @@ export const deltaMenu: SidebarItem[] = [
         title: 'Comparison',
         href: '/delta/docs/comparison',
       },
+      {
+        title: 'Integration',
+        href: '/delta/docs/integration',
+      }
     ],
   },
   {
