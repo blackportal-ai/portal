@@ -91,28 +91,6 @@ export const team = [
     ],
   },
   {
-    name: 'Robin Hallabro-Kokko',
-    image: 'https://avatars.githubusercontent.com/u/44033026?v=4',
-    position: 'Infrastructure Lead',
-    socialLinks: [
-      {
-        icon: SiX,
-        href: 'https://x.com/hallabrokokko',
-        label: 'X',
-      },
-      {
-        icon: SiLinkedin,
-        href: 'https://linkedin.com/in/robin-hallabro-kokko',
-        label: 'LinkedIn',
-      },
-      {
-        icon: SiGithub,
-        href: 'https://github.com/hallabro',
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
     name: 'Sviatoslav Makhynko',
     image: 'https://avatars.githubusercontent.com/u/33163056?v=4',
     position: 'Frontend Architect',
