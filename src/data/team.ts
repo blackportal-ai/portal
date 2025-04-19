@@ -68,6 +68,29 @@ export const team = [
     ],
   },
   {
+    name: 'Isaac Dobbins',
+    image:
+      'https://media.licdn.com/dms/image/v2/D5603AQGNoYRxHcF40Q/profile-displayphoto-shrink_200_200/B56ZSlkoNaGoAY-/0/1737944631178?e=1750291200&v=beta&t=3nIPRu2jVl3d4MfWJdPnXwHHDV1sVZsY3nZbT3ikbw0',
+    position: 'Lead Architect, Horizon',
+    socialLinks: [
+      {
+        icon: SiX,
+        href: 'https://x.com/IsaacDobbins',
+        label: 'X',
+      },
+      {
+        icon: SiLinkedin,
+        href: 'https://www.linkedin.com/in/isaacdobbins/',
+        label: 'LinkedIn',
+      },
+      {
+        icon: SiGithub,
+        href: 'https://github.com/idobbins',
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
     name: 'Robin Hallabro-Kokko',
     image: 'https://avatars.githubusercontent.com/u/44033026?v=4',
     position: 'Infrastructure Lead',
