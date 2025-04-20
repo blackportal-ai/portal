@@ -16,4 +16,12 @@ const nebulaDocs = defineCollection({
   schema: docsSchema,
 });
 
-export const collections = { deltaDocs, nebulaDocs };
+const horizonDocs = defineCollection({
+  loader: glob({
+    pattern: '**/*.{md,mdx}',
+    base: './src/content/horizon/docs',
+  }),
+  schema: docsSchema,
+});
+
+export const collections = { deltaDocs, nebulaDocs, horizonDocs };

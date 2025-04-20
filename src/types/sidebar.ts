@@ -1,4 +1,4 @@
-export type SidebarKey = 'delta' | 'nebula';
+export type SidebarKey = 'delta' | 'nebula' | 'horizon';
 
 export type SidebarItem = {
   title: string;

@@ -53,7 +53,7 @@ export const deltaMenu: SidebarItem[] = [
       {
         title: 'Integration',
         href: '/delta/docs/integration',
-      }
+      },
     ],
   },
   {
@@ -82,7 +82,15 @@ const nebulaMenu: SidebarItem[] = [
   },
 ];
 
+const horizonMenu: SidebarItem[] = [
+  {
+    title: 'Horizon Docs',
+    href: '/horizon/docs',
+  },
+];
+
 export const sidebarMenu: SidebarMenu = {
   delta: deltaMenu,
   nebula: nebulaMenu,
+  horizon: horizonMenu,
 };
