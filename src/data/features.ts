@@ -2,34 +2,34 @@ import type { Feature } from '@/types/features';
 
 export const deltaFeatures: Feature[] = [
   {
-    title: "Fast",
-    text: "Built with Rust, Delta delivers high-performance machine learning, optimized for compute-intensive tasks on CPU and future GPU backends.",
+    title: 'Fast',
+    text: 'Built with Rust, Delta delivers high-performance machine learning, optimized for compute-intensive tasks on CPU and future GPU backends.',
   },
   {
-    title: "Usability",
-    text: "Simple APIs make Delta accessible for beginners, with flexible options for advanced users to customize ML workflows.",
+    title: 'Usability',
+    text: 'Simple APIs make Delta accessible for beginners, with flexible options for advanced users to customize ML workflows.',
   },
   {
-    title: "Extensibility",
-    text: "Modular design allows users to extend Delta with custom preprocessing, algorithms, or evaluation metrics tailored to ML needs.",
+    title: 'Extensibility',
+    text: 'Modular design allows users to extend Delta with custom preprocessing, algorithms, or evaluation metrics tailored to ML needs.',
   },
   {
-    title: "Classical ML",
-    text: "Supports a growing suite of classical ML algorithms, including Linear Regression, Decision Trees, Random Forest, SVM, KNN, and more, with expansions like Naive Bayes and Gradient Boosting.",
+    title: 'Classical ML',
+    text: 'Supports a growing suite of classical ML algorithms, including Linear Regression, Decision Trees, Random Forest, SVM, KNN, and more, with expansions like Naive Bayes and Gradient Boosting.',
   },
   {
-    title: "Multi-Backend Acceleration",
-    text: "Currently supports CPU, with planned support for Metal, CUDA, Vulkan, and more, enabling efficient classical ML across diverse hardware.",
-    isFuture: true, 
+    title: 'Multi-Backend Acceleration',
+    text: 'Currently supports CPU, with planned support for Metal, CUDA, Vulkan, and more, enabling efficient classical ML across diverse hardware.',
+    isFuture: true,
   },
   {
-    title: "Nebula Integration",
-    text: "Seamless access to datasets pre-trained models via Nebula, enhancing collaboration and reproducibility.",
-    isFuture: true, 
+    title: 'Nebula Integration',
+    text: 'Seamless access to datasets pre-trained models via Nebula, enhancing collaboration and reproducibility.',
+    isFuture: true,
   },
   {
-    title: "Scalable Training",
-    text: "Future parallel and distributed training for classical ML, evolving to support large-scale deep learning models across multi-core and cloud systems.",
+    title: 'Scalable Training',
+    text: 'Future parallel and distributed training for classical ML, evolving to support large-scale deep learning models across multi-core and cloud systems.',
     isFuture: true,
   },
 ];
@@ -69,5 +69,13 @@ export const nebulaFeatures: Feature[] = [
     title: 'Private registry',
     text: 'Host your own Nebula registry for secure and confidential work, keeping sensitive data and models private while maintaining efficient access management.',
     isFuture: true,
+  },
+];
+
+export const horizonFeatures: Feature[] = [
+  {
+    title: 'Init title',
+    text: 'Init text',
+    isFuture: false,
   },
 ];
