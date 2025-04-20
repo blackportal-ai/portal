@@ -5,6 +5,7 @@ import { socialLinks } from '@/data/social-links';
 import {
   footerCompanyLinks,
   footerDeltaLinks,
+  footerHorizonLinks,
   footerNebulaLinks,
 } from '@/data/footer-links';
 import { cn } from '@/lib/utils';
@@ -17,7 +18,7 @@ export default function Footer({ isDocs }: Props) {
   return (
     <footer className="bg-background border-t">
       <div className={cn(isDocs ? 'px-4 md:px-8' : 'container')}>
-        <div className="grid grid-cols-1 gap-10 py-10 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 py-10 lg:grid-cols-5">
           <div className="order-2 flex flex-col items-center justify-between gap-6 lg:order-1 lg:items-start">
             <div className="flex flex-col items-start gap-4">
               <BlackPortalLogo className="h-7 w-auto" />
@@ -42,18 +43,15 @@ export default function Footer({ isDocs }: Props) {
             </span>
           </div>
 
-          <div className="order-1 grid grid-cols-2 gap-6 md:grid-cols-3 lg:order-2 lg:col-span-3 lg:justify-items-end">
+          <div className="order-1 grid grid-cols-2 gap-6 md:grid-cols-4 lg:order-2 lg:col-span-4 lg:justify-items-end">
             <div>
               <h2 className="mb-2 font-bold">Delta</h2>
 
               <ul className="text-muted-foreground flex flex-col gap-1">
-                {footerDeltaLinks.map((companyLink, idx) => (
+                {footerDeltaLinks.map((deltaLink, idx) => (
                   <li key={`footer-delta-link-${idx}`}>
-                    <Link
-                      className="hover:text-primary"
-                      href={companyLink.href}
-                    >
-                      {companyLink.title}
+                    <Link className="hover:text-primary" href={deltaLink.href}>
+                      {deltaLink.title}
                     </Link>
                   </li>
                 ))}
@@ -64,13 +62,27 @@ export default function Footer({ isDocs }: Props) {
               <h2 className="mb-2 font-bold">Nebula</h2>
 
               <ul className="text-muted-foreground flex flex-col gap-1">
-                {footerNebulaLinks.map((companyLink, idx) => (
+                {footerNebulaLinks.map((nebulaLink, idx) => (
                   <li key={`footer-nebula-link-${idx}`}>
+                    <Link className="hover:text-primary" href={nebulaLink.href}>
+                      {nebulaLink.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="mb-2 font-bold">Horizon</h2>
+
+              <ul className="text-muted-foreground flex flex-col gap-1">
+                {footerHorizonLinks.map((horizonLink, idx) => (
+                  <li key={`footer-horizon-link-${idx}`}>
                     <Link
                       className="hover:text-primary"
-                      href={companyLink.href}
+                      href={horizonLink.href}
                     >
-                      {companyLink.title}
+                      {horizonLink.title}
                     </Link>
                   </li>
                 ))}

@@ -56,3 +56,18 @@ export const footerNebulaLinks: MenuItem[] = [
     href: 'https://github.com/blackportal-ai/nebula/releases',
   },
 ];
+
+export const footerHorizonLinks: MenuItem[] = [
+  {
+    title: 'Documentation',
+    href: '/horizon/docs',
+  },
+  {
+    title: 'Examples',
+    href: 'https://github.com/blackportal-ai/horizon',
+  },
+  {
+    title: 'Release Notes',
+    href: 'https://github.com/blackportal-ai/horizon/releases',
+  },
+];
