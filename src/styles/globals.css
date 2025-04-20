@@ -127,7 +127,8 @@
 }
 
 .hero-delta::before,
-.hero-nebula::before {
+.hero-nebula::before,
+.hero-horizon::before {
   content: '';
   position: absolute;
   width: 15rem;
@@ -145,4 +146,8 @@
 
 .hero-nebula::before {
   background: radial-gradient(rgba(21, 128, 61, 0.4), transparent);
+}
+
+.hero-horizon::before {
+  background: radial-gradient(rgba(24, 40, 127, 0.483), transparent);
 }
