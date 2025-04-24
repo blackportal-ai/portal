@@ -8,16 +8,16 @@ export const deltaRoadmap: RoadmapItem[] = [
       'A minimal viable product introducing core classical machine learning algorithms including Linear Regression and Logistic Regression with basic data handling and model training support.',
   },
   {
-    title: 'Classical ML Expansion + Nebula Integration',
+    title: 'Core GPU Backend Support',
     quarter: '2025 Q4',
     description:
-      'Expanding Delta with additional classical machine learning algorithms including Decision Trees, Random Forest, Support Vector Machines (SVM), K-Nearest Neighbors (KNN), Naive Bayes, K-Means Clustering, Principal Component Analysis (PCA), and Gradient Boosting (e.g., XGBoost, LightGBM). Also introducing integration with Nebula for seamless model sharing and dataset access.',
+      'Adding GPU acceleration to Delta with Metal for macOS and CUDA for NVIDIA GPUs, enhancing performance for classical ML algorithms across major platforms.',
   },
   {
-    title: 'Core GPU Backend Support',
+    title: 'Classical ML Expansion + Nebula Integration',
     quarter: '2026 Q2',
     description:
-      'Adding GPU acceleration to Delta with Metal for macOS and CUDA for NVIDIA GPUs, enhancing performance for classical ML algorithms across major platforms.',
+      'Expanding Delta with additional classical machine learning algorithms including Decision Trees, Random Forest, Support Vector Machines (SVM), Naive Bayes, K-Means Clustering, Principal Component Analysis (PCA), and Gradient Boosting (e.g., XGBoost, LightGBM). Also introducing integration with Nebula for seamless model sharing and dataset access.',
   },
   {
     title: 'Cross-Platform GPU Expansion',
