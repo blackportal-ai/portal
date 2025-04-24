@@ -108,4 +108,18 @@ export const horizonLogos: BrandItem[] = [
       },
     },
   },
+  {
+    variants: {
+      svg: {
+        src: 'https://raw.githubusercontent.com/blackportal-ai/resources/23dceb1e96903984c0c9177253644988db82ac7d/horizon/logo/horizon_logo_black.svg',
+      },
+    },
+  },
+  {
+    variants: {
+      svg: {
+        src: 'https://raw.githubusercontent.com/blackportal-ai/resources/23dceb1e96903984c0c9177253644988db82ac7d/horizon/logo/horizon_logo_white.svg',
+      },
+    },
+  },
 ];
