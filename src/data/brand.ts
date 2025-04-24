@@ -70,4 +70,42 @@ export const nebulaLogos: BrandItem[] = [
       },
     },
   },
+  {
+    variants: {
+      svg: {
+        src: 'https://raw.githubusercontent.com/blackportal-ai/resources/23dceb1e96903984c0c9177253644988db82ac7d/nebula/logo/nebula_icon.svg',
+      },
+    },
+  },
+];
+
+export const horizonLogos: BrandItem[] = [
+  {
+    variants: {
+      svg: {
+        src: 'https://raw.githubusercontent.com/blackportal-ai/resources/23dceb1e96903984c0c9177253644988db82ac7d/horizon/logo/horizon_horizontal_logo_black.svg',
+      },
+    },
+  },
+  {
+    variants: {
+      svg: {
+        src: 'https://raw.githubusercontent.com/blackportal-ai/resources/23dceb1e96903984c0c9177253644988db82ac7d/horizon/logo/horizon_horizontal_logo_white.svg',
+      },
+    },
+  },
+  {
+    variants: {
+      svg: {
+        src: 'https://raw.githubusercontent.com/blackportal-ai/resources/23dceb1e96903984c0c9177253644988db82ac7d/horizon/logo/horizon_icon_black.svg',
+      },
+    },
+  },
+  {
+    variants: {
+      svg: {
+        src: 'https://raw.githubusercontent.com/blackportal-ai/resources/23dceb1e96903984c0c9177253644988db82ac7d/horizon/logo/horizon_icon_white.svg',
+      },
+    },
+  },
 ];
