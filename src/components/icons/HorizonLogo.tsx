@@ -71,7 +71,7 @@ export default function HorizonLogo({ className }: Props) {
           y2="624.914"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
+          <stop stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_44_323"
@@ -81,7 +81,7 @@ export default function HorizonLogo({ className }: Props) {
           y2="925.674"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
+          <stop stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_44_323"
@@ -91,7 +91,7 @@ export default function HorizonLogo({ className }: Props) {
           y2="130.775"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
+          <stop stopColor="white" />
         </linearGradient>
       </defs>
     </svg>
