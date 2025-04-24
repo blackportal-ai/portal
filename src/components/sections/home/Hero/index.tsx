@@ -6,6 +6,7 @@ import { Link } from '@/components/ui/Link';
 import { Badge } from '@/components/ui/Badge';
 import DeltaLogo from '@/components/icons/DeltaLogo';
 import NebulaLogo from '@/components/icons/NebulaLogo';
+import HorizonLogo from '@/components/icons/HorizonLogo';
 
 export default function Hero() {
   return (
@@ -36,7 +37,7 @@ export default function Hero() {
                 <Button variant="secondary" asChild>
                   <Link href="https://github.com/blackportal-ai/delta">
                     <SiGithub />
-                    <span>Star 300+</span>
+                    <span>Star 400+</span>
                   </Link>
                 </Button>
               </div>
@@ -76,9 +77,7 @@ export default function Hero() {
             </Badge>
 
             <CardHeader className="hero-horizon gap-4">
-              <div className="mx-auto mt-6 h-12 w-auto">
-                <span className="text-4xl font-bold">Horizon</span>
-              </div>
+              <HorizonLogo className="mx-auto mt-6 h-12 w-auto" />
 
               <CardDescription className="text-xl">
                 A Decentralized GPU Marketplace for Machine Learning Workloads.

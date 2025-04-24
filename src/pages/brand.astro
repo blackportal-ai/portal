@@ -1,7 +1,12 @@
 ---
 import BrandHero from '@/components/sections/brand/BrandHero';
 import BrandList from '@/components/sections/brand/BrandList';
-import { blackPortalLogos, deltaLogos, nebulaLogos } from '@/data/brand';
+import {
+  blackPortalLogos,
+  deltaLogos,
+  horizonLogos,
+  nebulaLogos,
+} from '@/data/brand';
 import Layout from '@/layouts/Layout.astro';
 ---
 
@@ -11,4 +16,5 @@ import Layout from '@/layouts/Layout.astro';
   <BrandList title="BlackPortal Logo" logos={blackPortalLogos} />
   <BrandList title="Delta Logo" logos={deltaLogos} />
   <BrandList title="Nebula Logo" logos={nebulaLogos} />
+  <BrandList title="Horizon Logo" logos={horizonLogos} />
 </Layout>
