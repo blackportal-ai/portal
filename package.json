@@ -13,7 +13,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/mdx": "^4.2.5",
     "@astrojs/react": "^4.2.5",
-    "@fontsource/chakra-petch": "^5.2.5",
+    "@fontsource/chakra-petch": "^5.2.6",
     "@hookform/resolvers": "^5.0.1",
     "@radix-ui/react-avatar": "^1.1.7",
     "@radix-ui/react-collapsible": "^1.1.8",
