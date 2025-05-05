@@ -26,7 +26,7 @@ export default function Hero() {
               <DeltaLogo className="mx-auto mt-6 h-12 w-auto" />
 
               <CardDescription className="text-xl">
-                Delta is an open-source machine learning framework in Rust
+                Delta is an Open-Source Machine Learning Framework in Rust
               </CardDescription>
 
               <div className="flex items-center justify-center gap-4">
@@ -53,7 +53,7 @@ export default function Hero() {
               <NebulaLogo className="mx-auto mt-6 h-12 w-auto" />
 
               <CardDescription className="text-xl">
-                A package manager for machine learning datasets and models.
+                A Package Manager for Machine Learning Datasets and Models.
               </CardDescription>
 
               <div className="flex items-center justify-center gap-4">
