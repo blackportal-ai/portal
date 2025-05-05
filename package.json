@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/mdx": "^4.2.6",
-    "@astrojs/react": "^4.2.5",
+    "@astrojs/react": "^4.2.7",
     "@fontsource/chakra-petch": "^5.2.6",
     "@hookform/resolvers": "^5.0.1",
     "@radix-ui/react-avatar": "^1.1.7",
