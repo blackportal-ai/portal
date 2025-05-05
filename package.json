@@ -49,7 +49,7 @@
     "tailwindcss": "^4.1.5",
     "tw-animate-css": "^1.2.8",
     "typescript": "^5.8.3",
-    "zod": "^3.24.3"
+    "zod": "^3.24.4"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
