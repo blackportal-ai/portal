@@ -2,6 +2,10 @@ import type { MenuItem } from '@/types/menu';
 
 export const mainMenu: MenuItem[] = [
   {
+    title: 'Nebula Registry',
+    href: '/nebula/registry'
+  },
+  {
     title: 'Sponsors',
     href: '/sponsors',
   },
