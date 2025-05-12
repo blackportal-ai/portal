@@ -33,7 +33,7 @@
     "@types/canvas-confetti": "^1.9.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
-    "astro": "^5.7.10",
+    "astro": "^5.7.12",
     "astro-expressive-code": "^0.41.2",
     "canvas-confetti": "^1.9.3",
     "class-variance-authority": "^0.7.1",
