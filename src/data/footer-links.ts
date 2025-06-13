@@ -44,6 +44,10 @@ export const footerDeltaLinks: MenuItem[] = [
 
 export const footerNebulaLinks: MenuItem[] = [
   {
+    title: 'Nebula Registry',
+    href: '/nebula/registry',
+  },
+  {
     title: 'Documentation',
     href: '/docs/nebula',
   },

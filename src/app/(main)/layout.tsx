@@ -15,6 +15,10 @@ const links: LinkItemType[] = [
     url: '/docs/delta',
   },
   {
+    text: 'Nebula Registry',
+    url: '/nebula/registry',
+  },
+  {
     text: 'Sponsors',
     url: '/sponsors',
   },
