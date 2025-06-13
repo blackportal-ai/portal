@@ -1,0 +1,31 @@
+---
+title: Release Checklist
+---
+
+This checklist outlines the steps for preparing and publishing a release of
+Delta. It ensures that all necessary tasks, such as version updates, testing,
+documentation, and publishing, are completed in an organized and efficient
+manner. By following these steps, we can ensure a smooth release process, making
+the framework available to users with all features properly tested and
+documented.
+
+## Steps
+
+1. Generate API documentation locally with `cargo doc --no-deps` and verify that
+   everything that has been changed/added are correct.
+2. Close fixed issues.
+3. Verifying the correctness of versioning and ensuring that no old versions are
+   not specified in each `Cargo.toml` file and documentation.
+4. Update this docs if something is outdated or new information is needed to be
+   added.
+5. Prepare release draft in GitHub repository.
+6. Publish the release on GitHub in GitHub repository. Checkmark both the
+   options:
+   1. Set as a pre-release
+   2. Create a discussion for this release
+7. Wait until `release.yml` workflow has been completed to publish library on
+   crates.io (will be triggered by creating a release)
+8. Announce the new release for team members and stakeholders on:
+   1. [𝕏](https://x.com/blackportal_ai)
+   2. [Discord](https://discord.gg/g5HtkAzRNG)
+   3. [LinkedIn](https://www.linkedin.com/company/blackportal)

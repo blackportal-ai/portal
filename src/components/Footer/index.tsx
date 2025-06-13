@@ -1,7 +1,6 @@
-import { Link } from '@/components/ui/Link';
+import { socialLinks } from '@/app/layout.config';
 import BlackPortalLogo from '@/components/icons/BlackPortalLogo';
-
-import { socialLinks } from '@/data/social-links';
+import { Link } from '@/components/ui/Link';
 import {
   footerCompanyLinks,
   footerDeltaLinks,
@@ -14,7 +13,7 @@ type Props = {
   isDocs?: boolean;
 };
 
-export default function Footer({ isDocs }: Props) {
+export default function Footer({ isDocs = false }: Readonly<Props>) {
   return (
     <footer className="bg-background border-t">
       <div className={cn(isDocs ? 'px-4 md:px-8' : 'container')}>
@@ -24,17 +23,19 @@ export default function Footer({ isDocs }: Props) {
               <BlackPortalLogo className="h-7 w-auto" />
 
               <ul className="text-muted-foreground flex items-center gap-5">
-                {socialLinks.map((socialLink, idx) => (
-                  <li key={`footer-social-link-${idx}`}>
-                    <Link
-                      className="hover:text-primary"
-                      href={socialLink.href}
-                      aria-label={socialLink.label}
-                    >
-                      <socialLink.icon className="h-5 w-5" />
-                    </Link>
-                  </li>
-                ))}
+                {socialLinks
+                  .filter((socialLink) => socialLink.type === 'icon')
+                  .map((socialLink, idx) => (
+                    <li key={`footer-social-link-${idx}`}>
+                      <Link
+                        className="hover:text-primary [&_svg]:size-5!"
+                        href={socialLink.url}
+                        aria-label={socialLink.text as string}
+                      >
+                        {socialLink.icon}
+                      </Link>
+                    </li>
+                  ))}
               </ul>
             </div>
 
