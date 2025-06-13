@@ -1,4 +1,4 @@
-export default function Sponsors() {
+export default function SponsorsHero() {
   return (
     <section className="animate-in fade-in py-20 duration-500">
       <div className="container mx-auto max-w-3xl">

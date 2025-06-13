@@ -3,6 +3,7 @@ import {
   horizonFeatures,
   nebulaFeatures,
 } from '@/data/features';
+
 import FeatureCard from './FeatureCard';
 
 export default function Features() {

@@ -1,0 +1,181 @@
+---
+title: Getting Started with Delta with Classical ML
+---
+
+## Adding Delta to Your Project
+
+To add the Delta library to your Rust project, you need to include it in your
+`Cargo.toml` file. Follow these steps:
+
+1. Open your project's `Cargo.toml` file.
+2. Add the following line under `[dependencies]`:
+
+```toml title="Cargo.toml"
+[dependencies]
+deltaml = "0.1.0"
+```
+
+Currently, we have published Delta to
+[deltaml](https://crates.io/crates/deltaml), but note that this is still
+experimental in alpha stage so things might break in the upcoming iterations.
+
+## Linear Regression with California Housing Dataset
+
+This example shows how to build, train, and evaluate a Linear Regression model
+to predict house prices using the California Housing Dataset.
+
+```rust
+use deltaml::{
+    algorithms::LinearRegression,
+    data::{CsvHeadersLoader, load_data},
+    losses::MSE,
+    optimizers::BatchGradientDescent,
+    scalers::StandardScaler,
+};
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    // Load the training and test datasets
+    let (x_train, y_train) = load_data::<CsvHeadersLoader, _>("../train_data.csv")
+        .expect("Failed to load train_data.csv");
+    let (x_test, y_test) =
+        load_data::<CsvHeadersLoader, _>("../test_data.csv").expect("Failed to load test_data.csv");
+
+    // Instantiate the model with a builder pattern
+    let mut model = LinearRegression::new()
+        .optimizer(BatchGradientDescent)
+        .loss_function(MSE)
+        .scaler(StandardScaler::new())
+        .normalize(true)
+        .build();
+
+    // Train the model
+    let learning_rate = 0.01;
+    let epochs = 1000;
+    model.fit(&x_train, &y_train, learning_rate, epochs)?;
+
+    // Make predictions on test data
+    let predictions = model.predict(&x_test)?;
+
+    println!("Predictions for new data: {:?}", predictions);
+
+    // Evaluate the model using Mean Squared Error
+    let test_loss = model.calculate_loss(&predictions, &y_test)?;
+    println!("Test Loss after training: {:.6}", test_loss);
+
+    Ok(())
+}
+```
+
+## Step-by-Step Explanation
+
+### 1. **Import Dependencies**
+
+```rust
+use deltaml::{
+    algorithms::LinearRegression,
+    data::{CsvHeadersLoader, load_data},
+    losses::MSE,
+    optimizers::BatchGradientDescent,
+    scalers::StandardScaler,
+};
+```
+
+- `LinearRegression`: The algorithm for regression tasks, predicting continuous
+  values.
+- `CsvHeadersLoader`: A utility to load CSV data, assuming the first row
+  contains headers.
+- `load_data`: A function to read features (`x`) and targets (`y`) from a CSV
+  file.
+- `MSE`: Mean Squared Error loss function, used to evaluate the model’s
+  performance.
+- `BatchGradientDescent`: The optimization algorithm to minimize the loss during
+  training.
+- `StandardScaler`: A preprocessing tool to standardize features by removing the
+  mean and scaling to unit variance.
+
+### 2. **Load Data**
+
+```rust
+let (x_train, y_train) = load_data::<CsvHeadersLoader, _>("../train_data.csv")
+    .expect("Failed to load train_data.csv");
+let (x_test, y_test) = load_data::<CsvHeadersLoader, _>("../test_data.csv")
+    .expect("Failed to load test_data.csv");
+```
+
+- The `load_data` function reads the California Housing Dataset from CSV files,
+  returning feature matrices (`x_train`, `x_test`) as `Array2<f64>` and target
+  vectors (`y_train`, `y_test`) as `Array1<f64>`.
+- `CsvHeadersLoader` assumes the CSV has headers (e.g., column names) and skips
+  them, loading numerical data. If you have a dataset without headers, you can
+  use `CsvLoader` instead.
+- The dataset should be pre-split into training and test sets, with features
+  (e.g., house age, rooms) and a target (e.g., house price).
+
+### 3. **Instantiate the Model**
+
+```rust
+let mut model = LinearRegression::new()
+    .optimizer(BatchGradientDescent)
+    .loss_function(MSE)
+    .scaler(StandardScaler::new())
+    .normalize(true)
+    .build();
+```
+
+- `LinearRegression::new()` creates a builder for configuring the model.
+- `.optimizer(BatchGradientDescent)` sets the optimization algorithm to Batch
+  Gradient Descent, which updates model weights using the entire training set.
+- `.loss_function(MSE)` specifies Mean Squared Error as the loss to minimize
+  during training.
+- `.scaler(StandardScaler::new())` applies feature standardization, ensuring
+  features have zero mean and unit variance.
+- `.normalize(true)` enables normalization, which is typically used with scaling
+  to preprocess data.
+- `.build()` constructs the `LinearRegression` model with the specified
+  configuration.
+
+### 4. **Train the Model**
+
+```rust
+let learning_rate = 0.01;
+let epochs = 1000;
+model.fit(&x_train, &y_train, learning_rate, epochs)?;
+```
+
+- `fit` trains the model on the training data (`x_train`, `y_train`).
+- `learning_rate = 0.01` controls the step size for weight updates during
+  optimization.
+- `epochs = 1000` specifies the number of iterations over the training data.
+- The `?` operator propagates any errors (e.g., dimension mismatches, invalid
+  data).
+
+### 5. **Make Predictions**
+
+```rust
+let predictions = model.predict(&x_test)?;
+```
+
+- `predict` generates predictions for the test features (`x_test`), returning an
+  `Array1<f64>` of predicted house prices.
+- The model applies the learned weights and any preprocessing (e.g., scaling) to
+  the test data.
+
+### 6. **Evaluate the Model**
+
+```rust
+let test_loss = model.calculate_loss(&predictions, &y_test)?;
+println!("Test Loss after training: {:.6}", test_loss);
+```
+
+- `calculate_loss` computes the Mean Squared Error between the predictions and
+  actual test targets (`y_test`).
+- The loss quantifies the model’s performance, with lower values indicating
+  better predictions.
+- The result is printed with six decimal places for readability.
+
+**Expected Output**:
+
+- Predictions: A vector of predicted house prices (e.g.,
+  `[206855.816, 123456.789, ...]`).
+- Test Loss: A single value indicating the model’s error on the test set.

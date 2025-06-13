@@ -6,7 +6,7 @@ export default function ContactHero() {
       <div className="container mx-auto max-w-3xl">
         <div className="animate-in slide-in-from-bottom-20 mb-10 duration-700">
           <h1 className="text-center text-3xl font-bold md:text-4xl">
-            Our Sponsors
+            Contact Us
           </h1>
           <p className="text-muted-foreground text-center text-xl">
             Submit a message to our team

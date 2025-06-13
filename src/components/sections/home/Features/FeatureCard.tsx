@@ -1,6 +1,7 @@
+import { FaCheck } from 'react-icons/fa6';
+
 import { Badge } from '@/components/ui/Badge';
 import type { Feature } from '@/types/features';
-import { FaCheck } from 'react-icons/fa6';
 
 type Props = {
   item: Feature;

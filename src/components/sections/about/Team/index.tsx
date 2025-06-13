@@ -7,7 +7,6 @@ import {
   CardTitle,
 } from '@/components/ui/Card';
 import { Link } from '@/components/ui/Link';
-
 import { team } from '@/data/team';
 
 export default function Team() {
