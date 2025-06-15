@@ -7,6 +7,7 @@ const sponsors = [
   {
     logo: SevallaLogo,
     href: 'https://sevalla.com/',
+    label: 'Sevalla Logo',
   },
 ];
 
@@ -23,6 +24,7 @@ export default function Sponsors() {
                 href={sponsor.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={sponsor.label}
               >
                 <Card className="p-4">
                   <sponsor.logo className="h-12" />
