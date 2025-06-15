@@ -57,7 +57,12 @@ export const socialLinks: LinkItemType[] = [
  */
 export const baseOptions: BaseLayoutProps = {
   nav: {
-    title: <BlackPortalLogo className="h-6 w-auto" />,
+    title: (
+      <>
+        <BlackPortalLogo className="h-6 w-auto" />{' '}
+        <span className="sr-only">BlackPortal</span>
+      </>
+    ),
   },
   searchToggle: { enabled: false },
   // see https://fumadocs.dev/docs/ui/navigation/links
