@@ -36,7 +36,7 @@ export default function RoadmapCard({ item, index }: Props) {
 
         <HoverCard>
           <HoverCardTrigger asChild>
-            <Button variant="ghost">
+            <Button variant="ghost" aria-label="Details">
               <BsThreeDots />
             </Button>
           </HoverCardTrigger>
