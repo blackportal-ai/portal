@@ -23,7 +23,7 @@ export default function BrandList({ title, logos }: Props) {
                 <CardHeader className="space-y-4">
                   <div className="flex items-center justify-center rounded-xl bg-zinc-200 p-6 dark:bg-zinc-800">
                     <Image
-                      className="h-12"
+                      className="h-12 w-auto"
                       src={logo.variants.svg.src}
                       alt={`${title} Logo`}
                       width={64}
