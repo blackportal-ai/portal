@@ -1,7 +1,8 @@
 'use client';
 
-import type { PackageInfo } from '@/types/nebula-registry';
 import * as React from 'react';
+
+import { useSearchParams } from 'next/navigation';
 
 import { Badge } from '@/components/ui/Badge';
 import {
@@ -12,10 +13,9 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/Card';
-
 import nebulaRegistryService from '@/lib/services/nebula-registry';
 import { formatBytes } from '@/lib/utils';
-import { useSearchParams } from 'next/navigation';
+import type { PackageInfo } from '@/types/nebula-registry';
 
 export default function NebulaRegistryList() {
   const searchParams = useSearchParams();

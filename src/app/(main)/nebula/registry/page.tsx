@@ -1,9 +1,11 @@
+import * as React from 'react';
+
 import type { Metadata } from 'next';
 
-import og from '@/lib/og';
 import NebulaRegistryHero from '@/components/sections/nebula/NebulaRegistryHero';
-import NebulaRegistrySearch from '@/components/sections/nebula/NebulaRegistrySearch';
 import NebulaRegistryList from '@/components/sections/nebula/NebulaRegistryList';
+import NebulaRegistrySearch from '@/components/sections/nebula/NebulaRegistrySearch';
+import og from '@/lib/og';
 
 const title = 'Nebula datasets and models';
 
@@ -19,11 +21,15 @@ export default function NebulaRegistryPage() {
 
       <div className="container">
         <div className="mx-auto mb-12 max-w-5xl">
-          <NebulaRegistrySearch />
+          <React.Suspense>
+            <NebulaRegistrySearch />
+          </React.Suspense>
         </div>
       </div>
 
-      <NebulaRegistryList />
+      <React.Suspense>
+        <NebulaRegistryList />
+      </React.Suspense>
     </main>
   );
 }

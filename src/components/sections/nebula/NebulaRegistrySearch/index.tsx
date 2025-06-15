@@ -1,11 +1,13 @@
 'use client';
 
 import * as React from 'react';
+
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+
 import { Search, X } from 'lucide-react';
 
 import { Card, CardHeader } from '@/components/ui/Card';
 import { Input } from '@/components/ui/Input';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 
 export default function NebulaRegistrySearch() {
   const router = useRouter();
