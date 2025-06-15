@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { Button } from '@/components/ui/Button';
@@ -21,7 +22,13 @@ export default function BrandList({ title, logos }: Props) {
               <Card>
                 <CardHeader className="space-y-4">
                   <div className="flex items-center justify-center rounded-xl bg-zinc-200 p-6 dark:bg-zinc-800">
-                    <img className="h-12" src={logo.variants.svg.src} alt="" />
+                    <Image
+                      className="h-12"
+                      src={logo.variants.svg.src}
+                      alt={`${title} Logo`}
+                      width={64}
+                      height={64}
+                    />
                   </div>
 
                   <hr />
