@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { SiGithub } from 'react-icons/si';
 
 import DeltaLogo from '@/components/icons/DeltaLogo';
@@ -6,7 +8,6 @@ import NebulaLogo from '@/components/icons/NebulaLogo';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { Card, CardDescription, CardHeader } from '@/components/ui/Card';
-import { Link } from '@/components/ui/Link';
 
 export default function Hero() {
   return (
@@ -35,7 +36,11 @@ export default function Hero() {
                 </Button>
 
                 <Button variant="secondary" asChild>
-                  <Link href="https://github.com/blackportal-ai/delta">
+                  <Link
+                    href="https://github.com/blackportal-ai/delta"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <SiGithub />
                     <span>Star 400+</span>
                   </Link>
@@ -62,7 +67,11 @@ export default function Hero() {
                 </Button>
 
                 <Button variant="secondary" asChild>
-                  <Link href="https://github.com/blackportal-ai/nebula">
+                  <Link
+                    href="https://github.com/blackportal-ai/nebula"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <SiGithub />
                     <span>Star 80+</span>
                   </Link>
@@ -89,7 +98,11 @@ export default function Hero() {
                 </Button>
 
                 <Button variant="secondary" asChild>
-                  <Link href="https://github.com/blackportal-ai/horizon">
+                  <Link
+                    href="https://github.com/blackportal-ai/horizon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <SiGithub />
                     <span>Star 20+</span>
                   </Link>

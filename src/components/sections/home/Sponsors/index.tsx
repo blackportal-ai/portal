@@ -1,6 +1,7 @@
+import Link from 'next/link';
+
 import SevallaLogo from '@/components/icons/SevallaLogo';
 import { Card } from '@/components/ui/Card';
-import { Link } from '@/components/ui/Link';
 
 const sponsors = [
   {
@@ -18,7 +19,11 @@ export default function Sponsors() {
         <ul className="flex items-center justify-center gap-6">
           {sponsors.map((sponsor, idx) => (
             <li key={`sponsor-${idx}`}>
-              <Link href={sponsor.href}>
+              <Link
+                href={sponsor.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Card className="p-4">
                   <sponsor.logo className="h-12" />
                 </Card>

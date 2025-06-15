@@ -1,6 +1,7 @@
+import Link from 'next/link';
+
 import { Button } from '@/components/ui/Button';
 import { Card, CardHeader } from '@/components/ui/Card';
-import { Link } from '@/components/ui/Link';
 import type { BrandItem } from '@/types/brand';
 
 type Props = {

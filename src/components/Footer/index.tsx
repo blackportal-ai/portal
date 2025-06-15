@@ -1,6 +1,7 @@
+import Link from 'next/link';
+
 import { socialLinks } from '@/app/layout.config';
 import BlackPortalLogo from '@/components/icons/BlackPortalLogo';
-import { Link } from '@/components/ui/Link';
 import {
   footerCompanyLinks,
   footerDeltaLinks,
@@ -30,6 +31,8 @@ export default function Footer({ isDocs = false }: Readonly<Props>) {
                       <Link
                         className="hover:text-primary [&_svg]:size-5!"
                         href={socialLink.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label={socialLink.text as string}
                       >
                         {socialLink.icon}

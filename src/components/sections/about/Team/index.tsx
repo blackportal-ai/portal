@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/Avatar';
 import { Button } from '@/components/ui/Button';
 import {
@@ -6,7 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/Card';
-import { Link } from '@/components/ui/Link';
 import { team } from '@/data/team';
 
 export default function Team() {
@@ -48,6 +49,8 @@ export default function Team() {
                         <li key={`member-social-link-${idx}`}>
                           <Link
                             href={socialLink.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             aria-label={socialLink.label}
                           >
                             <socialLink.icon className="h-4 w-4" />
