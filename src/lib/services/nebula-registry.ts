@@ -10,10 +10,13 @@ async function search(query: string | null) {
   return data;
 }
 
-export default {
+const nebulaRegistryService = {
   search,
 };
 
+export default nebulaRegistryService;
+
+// Mock data
 const data: PackageInfo[] = [
   {
     name: 'Test title 1',
