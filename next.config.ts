@@ -7,6 +7,7 @@ const withMDX = createMDX();
 const nextConfig: NextConfig = {
   output: 'export',
   reactStrictMode: true,
+  distDir: 'dist',
 };
 
 export default withMDX(nextConfig);
