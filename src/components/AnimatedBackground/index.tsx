@@ -1,12 +1,15 @@
+'use client';
+
 import * as React from 'react';
-import Particles, { initParticlesEngine } from '@tsparticles/react';
-import { loadSlim } from '@tsparticles/slim';
+
 import {
-  MoveDirection,
-  OutMode,
   type Container,
   type ISourceOptions,
+  MoveDirection,
+  OutMode,
 } from '@tsparticles/engine';
+import Particles, { initParticlesEngine } from '@tsparticles/react';
+import { loadSlim } from '@tsparticles/slim';
 
 export default function AnimatedBackground() {
   const [init, setInit] = React.useState(false);
