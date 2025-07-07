@@ -1,7 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/Tabs';
-import RoadmapCard from './RoadmapCard';
-
 import { deltaRoadmap, horizonRoadmap, nebulaRoadmap } from '@/data/roadmap';
+
+import RoadmapCard from './RoadmapCard';
 
 export default function Roadmap() {
   return (
