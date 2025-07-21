@@ -8,9 +8,6 @@ The official website for BlackPortal.
 # Install dependencies
 npm i
 
-# Need for mermaid
-npx playwright install --with-deps chromium
-
 # Run
 npm run dev
 ```
