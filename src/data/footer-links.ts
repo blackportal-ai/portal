@@ -30,7 +30,7 @@ export const footerCompanyLinks: MenuItem[] = [
 export const footerDeltaLinks: MenuItem[] = [
   {
     title: 'Documentation',
-    href: '/delta/docs',
+    href: '/docs/delta',
   },
   {
     title: 'Examples',
@@ -44,8 +44,12 @@ export const footerDeltaLinks: MenuItem[] = [
 
 export const footerNebulaLinks: MenuItem[] = [
   {
+    title: 'Nebula Registry',
+    href: '/nebula/registry',
+  },
+  {
     title: 'Documentation',
-    href: '/nebula/docs',
+    href: '/docs/nebula',
   },
   {
     title: 'Examples',
@@ -60,7 +64,7 @@ export const footerNebulaLinks: MenuItem[] = [
 export const footerHorizonLinks: MenuItem[] = [
   {
     title: 'Documentation',
-    href: '/horizon/docs',
+    href: '/docs/horizon',
   },
   {
     title: 'Examples',
