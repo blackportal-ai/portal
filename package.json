@@ -29,7 +29,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "@tsparticles/engine": "^3.9.1",
     "@tsparticles/react": "^3.0.0",
-    "@tsparticles/slim": "^3.8.1",
+    "@tsparticles/slim": "^3.9.1",
     "@types/canvas-confetti": "^1.9.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
