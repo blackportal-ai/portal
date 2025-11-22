@@ -42,7 +42,7 @@
     "playwright": "^1.56.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-hook-form": "^7.66.0",
+    "react-hook-form": "^7.66.1",
     "react-icons": "^5.5.0",
     "rehype-mermaid": "^3.0.0",
     "tailwind-merge": "^3.4.0",
